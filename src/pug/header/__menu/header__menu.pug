@@ -1,0 +1,15 @@
+mixin item(link,name,last)
+        li
+            if(last)
+                a(href=link).header__menu__item.header__menu__current-item=name
+            else
+                a(href=link).header__menu__item=name
+
+ul.header__menu
+        +item('#', 'Home', 1)
+        +item('#', 'About Us')
+        +item('#', 'Services')
+        +item('#', 'Careers')
+        +item('#', 'News')
+        +item('#', 'Documentation')
+        
