@@ -1,0 +1,15 @@
+@import './logo/logo.scss';
+@import './main-menu/main-menu.scss';
+@import './buttons/button.scss';
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    align-items: center;
+    padding: 0 140px;
+}

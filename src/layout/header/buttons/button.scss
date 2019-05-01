@@ -1,0 +1,15 @@
+.button {
+    padding: 15px 20px 15px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+@import './--type/button--type-full-hover.scss';
+@import './--type/button--type-empty.scss';
+@import './--type/button--type-empty-hover.scss';
