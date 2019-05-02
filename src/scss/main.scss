@@ -1,3 +1,4 @@
+@import '../fonts/fonts.scss';
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +9,16 @@ body {
     box-sizing: border-box;
     font-family: Montserrat;
 }
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+    height: 269px;
+    width: 320px;
+    justify-content: space-between;
+}
 
 @import '../layout/header/header.scss';
-@import '../layout/buttons/button.scss';
+@import '../layout/buttons/button/button.scss';
+@import '../layout/buttons/button-arrow/button-arrow.scss';
+@import '../layout/form/text-field/text-field.scss';
+@import '../layout/form/dropdown/dropdown.scss';

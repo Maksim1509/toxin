@@ -8,5 +8,10 @@ html(lang="en")
         title TOXIN
     body
         include ../layout/header/header
-        include ../layout/buttons/button
+        .main-buttons BUTTONS
+            include ../layout/buttons/button/button
+            include ../layout/buttons/button-arrow/button-arrow
+        include ../layout/form/text-field/text-field
+        include ../layout/form/text-field/--date/text-field--date
+        include ../layout/form/dropdown/dropdown
         script(src="../js/index.js")
