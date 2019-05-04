@@ -15,15 +15,16 @@
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     padding-left: 15px;
-    i {
-        font-family: Material Icons;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
-        text-align: center; 
-        color: rgba(31, 32, 65, 0.5);
-    }
+
+}
+.expand-more {
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    color: rgba(31, 32, 65, 0.5);
 }
