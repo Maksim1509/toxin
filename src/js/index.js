@@ -1,47 +1,7 @@
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable func-names */
-import $ from 'jquery';
-import '../../node_modules/pikaday/css/pikaday.css';
+
 import '../scss/main.scss';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import datepicker from 'jquery-datepicker';
 

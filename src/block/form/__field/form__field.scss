@@ -1,0 +1,16 @@
+.form__field {
+    margin-top: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid $dark-shade--25;
+    border-radius: 4px;
+    outline: none;
+    &::placeholder {
+        font-family: $montserrat;
+        font-size: $fsz--body;
+        color: $dark-shade--25;
+    }
+}

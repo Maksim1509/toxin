@@ -1,25 +1,5 @@
 @import '../fonts/fonts.scss';
-body {
-    margin: 0;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1920px;
-    min-width: 320px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: Montserrat;
-}
-.main-buttons {
-    display: flex;
-    flex-direction: column;
-    height: 269px;
-    width: 320px;
-    justify-content: space-between;
-}
+@import './var.scss';
 
-@import '../layout/header/header.scss';
-@import '../layout/buttons/button/button.scss';
-@import '../layout/buttons/button-arrow/button-arrow.scss';
-@import '../layout/form/text-field/text-field.scss';
-@import '../layout/form/dropdown/dropdown.scss';
-@import '../layout/form/data-dropdown/data-dropdawn.scss';
+@import '../block/form/form.scss';
+@import '../block/form/__field/form__field.scss';
