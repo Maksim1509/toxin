@@ -8,9 +8,21 @@
     border: 1px solid $dark-shade--25;
     border-radius: 4px;
     outline: none;
+    font-family: $montserrat;
+    transition: 0.3s;
     &::placeholder {
-        font-family: $montserrat;
+        transition: 0.3s;
         font-size: $fsz--body;
         color: $dark-shade--25;
+    }
+    &:hover {
+        border-color: $dark-shade--50;
+        &::placeholder {
+            color: $dark-shade--75
+        }
+    }
+    &:focus::placeholder {
+        color: transparent;
+        transition: 0.3s;
     }
 }
