@@ -1,0 +1,10 @@
+mixin dropdown-expand__line(name)
+    .dropdown-expand__line
+        span.dropdown-line-name= name
+        .dropdown-line-select
+            .dropdown-line-select-icon -
+            span.dropdown-line-value 0
+            .dropdown-line-select-icon +
++dropdown-expand__line("взрослые")
++dropdown-expand__line("дети")
++dropdown-expand__line("младенцы")

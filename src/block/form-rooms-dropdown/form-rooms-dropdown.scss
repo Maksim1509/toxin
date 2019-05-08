@@ -1,0 +1,8 @@
+.form-rooms-dropdown {
+    width: 266px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: url(../block/form-rooms-dropdown/expand_more.png) no-repeat 94% 50%;
+    &::placeholder {color: $dark-shade--75;}
+    cursor: pointer;
+}

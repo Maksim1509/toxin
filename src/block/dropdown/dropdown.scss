@@ -1,0 +1,7 @@
+.dropdown {
+    width: 320px;
+    padding: 10px;
+    display: inline-block;
+}
+@import './__label/dropdown__label.scss';
+@import './dropdown-expand/dropdown-expand.scss';
