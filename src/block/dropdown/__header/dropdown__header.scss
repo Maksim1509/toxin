@@ -1,0 +1,13 @@
+.dropdown__header {
+    border-color: $dark-shade--50;
+    color: $dark-shade--75;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0;
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 18px;
+    user-select: none;
+}

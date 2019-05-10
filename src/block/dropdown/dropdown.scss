@@ -1,7 +1,13 @@
-.dropdown {
-    width: 320px;
-    padding: 10px;
-    display: inline-block;
-}
-@import './__label/dropdown__label.scss';
-@import './dropdown-expand/dropdown-expand.scss';
+@import './__header/dropdown__header.scss';
+@import './__header-icon/button-dropdown__icon.scss';
+
+@import './__body/dropdown__body.scss';
+@import './__body-item/dropdown__body-item.scss';
+@import './__body-item-name/dropdown__body-item-name.scss';
+
+@import './__select/dropdown__select.scss';
+@import './__select-button/dropdown__select-button.scss';
+@import './__value/dropdown__value.scss';
+
+@import './__buttons/dropdown__buttons.scss';
+@import './__button/dropdown__button.scss';

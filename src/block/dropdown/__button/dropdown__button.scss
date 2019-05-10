@@ -1,0 +1,13 @@
+.dropdown__button {
+    background: transparent;
+    border: none;
+    color: $purple;
+    font-family: $montserrat--bold;
+    font-size: $fsz--h3;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+@import './--clear/dropdown__button--clear.scss';
+@import './--show/button--show.scss';

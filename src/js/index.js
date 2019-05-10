@@ -2,24 +2,4 @@
 /* eslint-disable func-names */
 
 import '../scss/main.scss';
-
-// import datepicker from 'jquery-datepicker';
-
-
-// datepicker($);
-
-
-// datepicker($);
-// $(function() {
-//   const dates = $('#from, #to').datepicker({
-//     onSelect: function ( selectedDate ) {
-//       const option = this.id === "from" ? "minDate" : "maxDate",
-// 	    instance = $( this ).data( "datepicker" ),
-// 	    date = $.datepicker.parseDate(
-// 	instance.settings.dateFormat ||
-// 	$.datepicker._defaults.dateFormat,
-// 	selectedDate, instance.settings );
-// 	dates.not( this ).datepicker( "option", option, date );
-// 	}
-//   });
-// });
+import '../block/dropdown/button-dropdown';
