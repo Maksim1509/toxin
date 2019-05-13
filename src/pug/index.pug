@@ -1,3 +1,4 @@
+include ../block/checkbox-button/checkbox-button
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -15,5 +16,9 @@ html(lang="en")
         include ../block/form-rooms-dropdown/form-rooms-dropdown
         div
             include ../block/dropdown/dropdown
+        div
+            +checkbox-button('Можно курить',
+            'Можно с питомцами',
+            'Можно пригласить гостей (до 10 человек)')
         script(src="../js/index.js")
                

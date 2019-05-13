@@ -3,3 +3,4 @@
 
 import '../scss/main.scss';
 import '../block/dropdown/button-dropdown';
+import '../block/checkbox-button/checkbox-button';
