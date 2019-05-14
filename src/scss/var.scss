@@ -15,4 +15,28 @@ $fsz--h3:   12px;
 $montserrat: 'Montserrat', sans-serif;
 $montserrat--bold: 'Montserrat Bold', sans-serif;
 $quicksand: 'Quicksand', sans-serif;
-
+/*MIXINS*/
+@mixin text-body {
+    font-family: $montserrat;
+    font-size: $fsz--body;
+    line-height: 24px;
+    color: $dark-shade--75;
+}
+@mixin text-h3 {
+    font-family: $montserrat--bold;
+    font-size: $fsz--h3;
+    line-height: 15px;
+    color: $dark-shade--100;
+}
+@mixin text-h2 {
+    font-family: $quicksand;
+    font-size: $fsz--h2;
+    line-height: 24px;
+    color: $dark-shade--100;
+}
+@mixin text-h2 {
+    font-family: $quicksand;
+    font-size: $fsz--h1;
+    line-height: 30px;
+    color: $dark-shade--100;
+}

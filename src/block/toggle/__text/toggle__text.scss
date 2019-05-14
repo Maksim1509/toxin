@@ -1,0 +1,42 @@
+.toggle__text {
+    @include text-body;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    user-select: none;
+    &:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 40px;
+        height: 20px;
+        border: 1px solid $dark-shade--25;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 5px;
+        bottom: 4.5px;
+        background: $dark-shade--25;
+        border-radius: 10px;
+    }
+    &:hover {
+        &:before {
+            border-color: $purple;
+        }
+    }
+}
+.toggle__input:checked + .toggle__text {
+    &:before {
+        border-color: $purple;
+    }
+    &:after {
+        left: 24px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+}

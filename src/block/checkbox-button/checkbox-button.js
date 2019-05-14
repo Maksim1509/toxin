@@ -1,5 +1,4 @@
 const checkboxController = () => {
-  
   const checkboxContent = document.querySelectorAll('.checkbox-button__content');
   const checkbox = document.querySelectorAll('.checkbox-button__button');
 
