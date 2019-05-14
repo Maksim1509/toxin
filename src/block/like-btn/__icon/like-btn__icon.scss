@@ -1,0 +1,35 @@
+.like-btn__icon--liked {
+    display: none;
+}
+.like-btn__icon {
+    line-height: 9px;
+    font-size: 10px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+    user-select: none;
+    transition: 0.3s;
+}
+.like-btn__input:checked + .like-btn__wrap {
+    .like-btn__icon {
+        display: none;
+    }
+    .like-btn__icon--liked{
+        line-height: 9px;
+        font-size: 10px;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2px;
+        color: $purple;
+        transition: 0.3s;
+        user-select: none;
+
+    }
+}
+

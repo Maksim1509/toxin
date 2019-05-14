@@ -1,0 +1,11 @@
+.like-btn__count {
+    line-height: 12px;
+    transition: 0.3s;
+    user-select: none;
+}
+.like-btn__input:checked + .like-btn__wrap {
+    border-color: $purple;
+    .like-btn__count {
+        color: $purple;
+    }
+}
