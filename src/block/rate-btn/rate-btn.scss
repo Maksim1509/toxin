@@ -1,0 +1,8 @@
+@import './__star/rate-btn__star.scss';
+
+.rate-btn__wrap {
+    display: flex;
+    &:hover .rate-btn__star  {
+        background: url('../block/rate-btn/icon/star.svg') no-repeat center center;
+    }
+}
