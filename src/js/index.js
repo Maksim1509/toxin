@@ -5,3 +5,4 @@ import '../scss/main.scss';
 import '../block/dropdown/button-dropdown';
 import '../block/checkbox-button/checkbox-button';
 import '../block/like-btn/like-btn';
+import '../block/rate-btn/rate-btn';

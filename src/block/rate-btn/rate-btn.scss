@@ -2,7 +2,15 @@
 
 .rate-btn__wrap {
     display: flex;
-    &:hover .rate-btn__star  {
-        background: url('../block/rate-btn/icon/star.svg') no-repeat center center;
-    }
+    width: 120px;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover  {
+        .rate-btn__star:before {
+            display: none;
+        }
+        .rate-btn__star:after {
+            display: block;
+        }
+    } 
 }
