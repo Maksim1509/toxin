@@ -1,0 +1,35 @@
+@import '../block/range-slider/jquery-ui.structure.min.css';
+
+.ui-slider {
+    width: 266px;
+    height: 6px;
+    border: 1px solid $dark-shade--25;
+    cursor: pointer;
+    border-radius: 3px;
+    .ui-slider-handle {
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        top: - .3em;
+        outline: none;
+        user-select: none;
+        cursor: pointer;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border: 2px solid white;
+    }
+    .ui-slider-range {
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
+}
+.range-slider__title {
+    margin-right: 68px;
+    @include text-h3;
+}
+
+.range-slider__value {
+    border: none;
+    font-size: $fsz--h3;
+    font-family: $montserrat;
+    color: $dark-shade--50;
+    margin-bottom: 23px;
+}

@@ -16,3 +16,10 @@
 @import '../block/toggle/toggle.scss';
 @import '../block/like-btn/like-btn.scss';
 @import '../block/rate-btn/rate-btn.scss';
+@import '../block/range-slider/range-slider.scss';
+
+.ui1{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}

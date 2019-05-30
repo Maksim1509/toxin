@@ -34,7 +34,7 @@ $quicksand: 'Quicksand', sans-serif;
     line-height: 24px;
     color: $dark-shade--100;
 }
-@mixin text-h2 {
+@mixin text-h1 {
     font-family: $quicksand;
     font-size: $fsz--h1;
     line-height: 30px;

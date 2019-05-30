@@ -16,6 +16,7 @@ html(lang="en")
         include ../block/form-filter-dropdown/form-filter-dropdown
         include ../block/form-subscrip/form-subscrip
         include ../block/form-rooms-dropdown/form-rooms-dropdown
+        include ../block/range-slider/range-slider
         div
             include ../block/dropdown/dropdown
         div
@@ -24,11 +25,15 @@ html(lang="en")
             'Можно пригласить гостей (до 10 человек)')
         div
             include ../block/radio-btn/radio-btn
-        div
-            +toggle
-        div
-            include ../block/like-btn/like-btn
-        div
-            +rate-btn
+        .ui1
+            div
+                +toggle
+            div
+                include ../block/like-btn/like-btn
+        .ui1
+            div
+                +rate-btn
+            div
+                +range-slider
         script(src="../js/index.js")
                
