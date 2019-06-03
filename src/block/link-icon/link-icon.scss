@@ -1,0 +1,16 @@
+.link-icon {
+    border: none;
+    background: transparent;
+    @include text-h3;
+    text-transform: uppercase;
+    color: $purple;
+    padding: 0;
+    width: 61px;
+    cursor: pointer;
+
+    margin: 10px;
+}
+
+.link-icon--grey {
+    color: $dark-shade--50;
+}

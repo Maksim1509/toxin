@@ -1,0 +1,29 @@
+@mixin button($textColor, $border, $bcgColor) {
+    width: 99px;
+    height: 44px;
+    box-sizing: border-box;
+    @include text-h3;
+    text-transform: uppercase;
+    border-radius: 22px;
+    color: $textColor;
+    border: $border;
+    background: $bcgColor;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    margin: 10px;
+} 
+.button {
+    @include button(white, none, 
+    linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%));
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.button__text {
+    transition: 0.3s;
+}
+
+@import './--empty/button--empty.scss';
+@import './--forward/button-forward.scss';

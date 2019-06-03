@@ -18,8 +18,14 @@
 @import '../block/rate-btn/rate-btn.scss';
 @import '../block/range-slider/range-slider.scss';
 
-.ui1{
+@import '../block/button/button.scss';
+@import '../block/link-icon/link-icon.scss';
+
+main {
     display: flex;
-    justify-content: space-around;
-    height: 100px;
+    .left, .center, .right {
+        min-width: 350px;
+        max-width: 30%;
+    }
+    flex-wrap: wrap;
 }

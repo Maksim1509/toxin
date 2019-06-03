@@ -1,6 +1,8 @@
 include ../block/checkbox-button/checkbox-button
 include ../block/toggle/toggle
 include ../block/rate-btn/rate-btn
+include ../block/button/button
+include ../block/link-icon/link-icon
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -9,31 +11,42 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title TOXIN
     body
-        include ../block/form/form
-        include ../block/form-date/form-date
-        include ../block/form-date-dropdown/form-date-dropdown
-        include ../block/form-date-dropdown/form-date-dropdown
-        include ../block/form-filter-dropdown/form-filter-dropdown
-        include ../block/form-subscrip/form-subscrip
-        include ../block/form-rooms-dropdown/form-rooms-dropdown
-        include ../block/range-slider/range-slider
-        div
-            include ../block/dropdown/dropdown
-        div
-            +checkbox-button('Можно курить',
-            'Можно с питомцами',
-            'Можно пригласить гостей (до 10 человек)')
-        div
-            include ../block/radio-btn/radio-btn
-        .ui1
-            div
-                +toggle
-            div
-                include ../block/like-btn/like-btn
-        .ui1
-            div
-                +rate-btn
-            div
-                +range-slider
+        main
+            .left
+                include ../block/form/form
+                include ../block/form-date/form-date
+                include ../block/form-date-dropdown/form-date-dropdown
+                include ../block/form-date-dropdown/form-date-dropdown
+                include ../block/form-filter-dropdown/form-filter-dropdown
+                include ../block/form-subscrip/form-subscrip
+                include ../block/form-rooms-dropdown/form-rooms-dropdown
+                include ../block/range-slider/range-slider
+            .center
+                div
+                    +checkbox-button('Можно курить',
+                    'Можно с питомцами',
+                    'Можно пригласить гостей (до 10 человек)')
+                div
+                    include ../block/radio-btn/radio-btn
+                div
+                    +toggle
+                div
+                    include ../block/like-btn/like-btn
+                div
+                    +rate-btn
+                div
+                    include ../block/dropdown/dropdown
+            .right
+                div
+                    +range-slider
+                div Buttons
+                    div
+                        +button('click me')(class="button")
+                        +button('click me')(class="button button--empty")
+                    div
+                        +link-icon('click me').link-icon
+                        +link-icon('click me').link-icon.link-icon--grey
+                    div
+                        +button('перейти к оплате', 1).button.button--forward
         script(src="../js/index.js")
                

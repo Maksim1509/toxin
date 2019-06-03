@@ -1,0 +1,8 @@
+mixin button(name, forward)
+    if forward
+        button(class!=attributes.class)= name
+            .button__arrow
+                i.material-icons arrow_forward
+    else
+        button(class!=attributes.class)
+            span.button__text= name
