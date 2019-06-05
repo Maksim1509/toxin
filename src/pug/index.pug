@@ -3,6 +3,8 @@ include ../block/toggle/toggle
 include ../block/rate-btn/rate-btn
 include ../block/button/button
 include ../block/link-icon/link-icon
+include ../block/pagination/pagination
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -48,5 +50,7 @@ html(lang="en")
                         +link-icon('click me').link-icon.link-icon--grey
                     div
                         +button('перейти к оплате', 1).button.button--forward
+                    div
+                        +pagination
         script(src="../js/index.js")
                

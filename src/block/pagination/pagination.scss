@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 241px;
+
+    margin: 10px;
+}
+
+@import './pagination__item.scss';
+@import './pagination__item--current.scss';
+@import './pagination__arrow.scss';
+@import './pagination__text.scss';
+@import './pagination__title.scss';
+@import './pagination__body.scss';
