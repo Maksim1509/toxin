@@ -1,0 +1,20 @@
+mixin rooms-filter__body-item(name, value)
+    .rooms-filter__body-item
+        span= name
+        .rooms-filter__select
+            .rooms-filter__select-button -
+            .rooms-filter__value= value
+            .rooms-filter__select-button +
+mixin rooms-filter
+    .form
+        .form__title dropdown
+            .form__field.rooms-filter
+                p.rooms-filter__selected-values
+                    span#bad-room 2 cпальни,
+                    | 
+                    span#bad 2 кровати...
+                i.material-icons.rooms-filter__icon expand_more
+            .rooms-filter__body
+                +rooms-filter__body-item('спальни', 2)
+                +rooms-filter__body-item('кровати', 2)
+                +rooms-filter__body-item('ванные комнаты', 0)

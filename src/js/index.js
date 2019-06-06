@@ -7,3 +7,4 @@ import '../block/like-btn/like-btn';
 import '../block/rate-btn/rate-btn';
 import '../block/range-slider/range-slider';
 import '../block/pagination/pugination';
+import '../block/rooms-filter/rooms-filter';

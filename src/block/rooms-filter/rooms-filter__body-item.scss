@@ -1,0 +1,7 @@
+.rooms-filter__body-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    @include text-h3;
+}

@@ -20,7 +20,6 @@ button.addEventListener('click', () => {
 for (let i = 0; i < plus.length; i += 1) {
   plus[i].addEventListener('click', () => {
     buttonClear.classList.add('button--show');
-    console.log(buttonClear);
     const value = plus[i].previousSibling;
     value.textContent = Number(value.textContent) + 1;
   });
@@ -30,10 +29,8 @@ for (let i = 0; i < plus.length; i += 1) {
 for (let i = 0; i < minus.length; i += 1) {
   minus[i].addEventListener('click', () => {
     const value = minus[i].nextSibling;
-    console.log(value);
     if (value.textContent !== '0') {
       value.textContent = Number(value.textContent) - 1;
-      console.log(111);
     }
   });
 }

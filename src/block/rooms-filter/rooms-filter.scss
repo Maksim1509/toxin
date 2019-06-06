@@ -1,0 +1,19 @@
+.rooms-filter {
+    width: 266px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: $dark-shade--75;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: none;
+    user-select: none;
+}
+
+@import './rooms-filter__icon.scss';
+@import './rooms-filter__body.scss';
+@import './rooms-filter__body-item.scss';
+@import './rooms-filter__select.scss';
+@import './rooms-filter__select-button.scss';
+@import './rooms-filter--show.scss';

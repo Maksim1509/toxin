@@ -1,0 +1,16 @@
+.rooms-filter__select-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $dark-shade--25;
+    box-sizing: border-box;
+    border-radius: 22px;
+    font-family: $montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-shade--50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
