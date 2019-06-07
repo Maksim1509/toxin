@@ -6,6 +6,7 @@ include ../block/link-icon/link-icon
 include ../block/pagination/pagination
 include ../block/rooms-filter/rooms-filter
 include ../block/range-slider/range-slider
+include ../block/checkbox-list/checkbox-list
 
 <!DOCTYPE html>
 html(lang="en")
@@ -23,8 +24,8 @@ html(lang="en")
                 include ../block/form-date-dropdown/form-date-dropdown
                 include ../block/form-filter-dropdown/form-filter-dropdown
                 include ../block/form-subscrip/form-subscrip
-                
                 +rooms-filter
+                +checkbox-list
             .center
                 div
                     +checkbox-button('Можно курить',

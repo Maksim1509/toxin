@@ -1,0 +1,27 @@
+.checkbox-list {
+    width: 266px;
+}
+
+.checkbox-list__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-list__icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark-shade--50;
+}
+
+.checkbox-list__content {
+    display: none;
+}
+
+.checkbox-list__content--show {
+    display: flex;
+}

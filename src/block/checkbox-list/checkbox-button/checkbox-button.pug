@@ -1,0 +1,10 @@
+mixin checkbox-list__btn(...contents)
+    .checkbox-button.checkbox-list
+        .checkbox-button__title.checkbox-list__title expandable checkbox list
+            i.material-icons.checkbox-list__icon expand_more
+        each content in contents
+            .checkbox-button__content.checkbox-list__content
+                .checkbox-button__button.checkbox-list__button
+                span.checkbox-button__text= content
+    
+    
