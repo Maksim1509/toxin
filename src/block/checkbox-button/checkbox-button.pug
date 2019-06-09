@@ -1,9 +1,5 @@
-mixin checkbox-button(...contents)
+mixin checkbox-button(title, ...contents)
     .checkbox-button
-        .checkbox-button__title Checkbox Buttons
+        +title(title)
         each content in contents
-            .checkbox-button__content
-                .checkbox-button__button
-                span.checkbox-button__text= content
-    
-    
+            +input-chbox(content)

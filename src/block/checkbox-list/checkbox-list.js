@@ -1,6 +1,4 @@
-
 const expandCheckbox = () => {
-
   const icon = document.querySelector('.checkbox-list__icon');
   const title = document.querySelector('.checkbox-list__title');
   const checkboxes = document.querySelectorAll('.checkbox-list__content');

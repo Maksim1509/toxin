@@ -1,0 +1,11 @@
+mixin rich-chbox(title, ...contents)
+    .rich-chbox
+        .rich-chbox__title
+            +title(title)
+        .rich-chbox__content
+            for content in contents
+                +input-chbox(content.main).rich-chbox__text
+                p.rich-chbox__discription= content.discription
+    
+    
+    

@@ -1,5 +1,8 @@
-include ./checkbox-button/checkbox-button
-
-mixin checkbox-list
-    +checkbox-list__btn('Завтрак', "Письменный стол",
-        "Стул для кормления", "Кроватка", "Телевизор", "Шампунь")
+mixin checkbox-list(title, ...contents)
+    .checkbox-list
+        .checkbox-list__title
+            +title(title)
+            i.material-icons.checkbox-list__icon expand_more
+        each content in contents
+            .checkbox-list__content
+                +input-chbox(content)

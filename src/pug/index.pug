@@ -7,6 +7,9 @@ include ../block/pagination/pagination
 include ../block/rooms-filter/rooms-filter
 include ../block/range-slider/range-slider
 include ../block/checkbox-list/checkbox-list
+include ../block/input-chbox/input-chbox
+include ../block/title/title
+include ../block/rich-chbox/rich-chbox
 
 <!DOCTYPE html>
 html(lang="en")
@@ -25,10 +28,11 @@ html(lang="en")
                 include ../block/form-filter-dropdown/form-filter-dropdown
                 include ../block/form-subscrip/form-subscrip
                 +rooms-filter
-                +checkbox-list
+                +checkbox-list('expandable checkbox list', 'Завтрак',
+                 "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
             .center
                 div
-                    +checkbox-button('Можно курить',
+                    +checkbox-button('checkbox-buttons','Можно курить',
                     'Можно с питомцами',
                     'Можно пригласить гостей (до 10 человек)')
                 div
@@ -41,6 +45,12 @@ html(lang="en")
                     +rate-btn
                 div
                     include ../block/dropdown/dropdown
+                div
+                    +input-chbox('TEST')
+                div
+                    +title('test')
+                div
+                    +rich-chbox('test', {main: 'main', discription: 'discrip'}, {main: 'main2', discription: 'discrip2'} )
             .right
                 div
                     +range-slider

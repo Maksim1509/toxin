@@ -1,0 +1,12 @@
+.input-chbox__button {
+    box-sizing: border-box;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 4px;
+    border: 1px solid $dark-shade--25;
+    background-color: #ffffff;
+    box-shadow: none;
+    margin-right: 9.74px;
+}
+
+@import './--checked/input-chbox__button--checked.scss';

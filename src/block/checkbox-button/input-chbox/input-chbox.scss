@@ -1,0 +1,15 @@
+.input-chbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 222px;
+    margin-top: 10.56px;
+    cursor: pointer;
+    &:hover .input-chbox__button {
+        border-color: $purple;
+    } 
+}
+
+@import './__button/input-chbox__button.scss';
+@import './__button/--checked/input-chbox__button--checked.scss';
+@import './__text/input-chbox__text.scss';
