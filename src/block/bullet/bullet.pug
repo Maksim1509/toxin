@@ -1,0 +1,9 @@
+mixin bullet(title, ...items)
+    .bullet
+        .bullet__title
+            +title(title)
+        ul.bullet__list
+            for item in items   
+                li.bullet__item
+                    .bullet__ellipse
+                    span.bullet__text= item

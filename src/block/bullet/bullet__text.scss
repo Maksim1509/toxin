@@ -1,0 +1,6 @@
+.bullet__text {
+    @include text-body;
+    width: 271px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}

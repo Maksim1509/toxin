@@ -10,6 +10,7 @@ include ../block/checkbox-list/checkbox-list
 include ../block/input-chbox/input-chbox
 include ../block/title/title
 include ../block/rich-chbox/rich-chbox
+include ../block/bullet/bullet
 
 <!DOCTYPE html>
 html(lang="en")
@@ -66,5 +67,9 @@ html(lang="en")
                         +button('перейти к оплате', 1).button.button--forward
                     div
                         +pagination
+                    div
+                        +bullet('bullet list', 'Нельзя с питомцами',
+                         'Без вечеринок и мероприятия',
+                          'Время прибытия — после 13:00, а выезд до 12:00')
         script(src="../js/index.js")
                
