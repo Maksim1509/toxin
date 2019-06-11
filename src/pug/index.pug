@@ -11,6 +11,7 @@ include ../block/input-chbox/input-chbox
 include ../block/title/title
 include ../block/rich-chbox/rich-chbox
 include ../block/bullet/bullet
+include ../block/room-info/room-info
 
 <!DOCTYPE html>
 html(lang="en")
@@ -31,6 +32,8 @@ html(lang="en")
                 +rooms-filter
                 +checkbox-list('expandable checkbox list', 'Завтрак',
                  "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
+                +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
+                {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})
             .center
                 div
                     +checkbox-button('checkbox-buttons','Можно курить',

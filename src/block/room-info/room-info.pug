@@ -1,0 +1,9 @@
+mixin room-info(...contents)
+    .room-info
+        for content in contents
+            .room-info__item
+                .room-info__icon-place
+                    i.material-icons.room-info__icon= content.icon
+                .room-info__text
+                    .room-info__title= content.title
+                    .room-info__discrip= content.discrip

@@ -1,0 +1,10 @@
+.room-info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+@import './room-info__item.scss';
+@import './room-info__icon.scss';
+@import './room-info__icon-place.scss';
+@import './room-info__title.scss';
+@import './room-info__discrip.scss';
