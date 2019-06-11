@@ -12,6 +12,8 @@ include ../block/title/title
 include ../block/rich-chbox/rich-chbox
 include ../block/bullet/bullet
 include ../block/room-info/room-info
+include ../block/feedback/feedback
+include ../block/like-btn/like-btn
 
 <!DOCTYPE html>
 html(lang="en")
@@ -44,7 +46,7 @@ html(lang="en")
                 div
                     +toggle
                 div
-                    include ../block/like-btn/like-btn
+                    +like-btn
                 div
                     +rate-btn
                 div
@@ -54,8 +56,12 @@ html(lang="en")
                 div
                     +title('test')
                 div
-                    +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор', discription: 'Ширина коридоров в номере не менее 91 см.'},
-                    {main: 'Помощник для инвалидов', discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
+                    +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор',
+                     discription: 'Ширина коридоров в номере не менее 91 см.'},
+                    {main: 'Помощник для инвалидов',
+                     discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
+                div
+                    +feedback({name: 'Мурад Сарафанов', data: '5 дней назад', text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
             .right
                 div
                     +range-slider
