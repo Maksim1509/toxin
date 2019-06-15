@@ -10,8 +10,6 @@
     background: $bcgColor;
     transition: 0.3s;
     cursor: pointer;
-    
-    margin: 10px;
 } 
 .button {
     @include button(white, none, 

@@ -1,0 +1,11 @@
+mixin card-find-rooms(contents)
+    .card-find-rooms
+        .card-find-rooms__title
+            +card-title(contents.title)
+        .card-find-rooms__select-date
+            +date-dropdown('прибытие')
+            +date-dropdown('выезд')
+        .card-find-rooms__dropdown
+            +dropdown('гости')
+        .card-find-rooms__btn
+            +button('подобрать номер', 1).button.button--forward

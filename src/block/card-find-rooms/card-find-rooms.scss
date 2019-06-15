@@ -1,0 +1,7 @@
+@import './card-find-rooms__select-date.scss';
+@import './card-find-rooms__dropdown.scss';
+@import './card-find-rooms__btn.scss';
+
+.card-find-rooms {
+    @include card;
+}

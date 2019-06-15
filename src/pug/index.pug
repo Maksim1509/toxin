@@ -14,7 +14,10 @@ include ../block/bullet/bullet
 include ../block/room-info/room-info
 include ../block/feedback/feedback
 include ../block/like-btn/like-btn
-
+include ../block/card-title/card-title
+include ../block/card-find-rooms/card-find-rooms
+include ../block/form-date-dropdown/form-date-dropdown
+include ../block/dropdown/dropdown
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -27,8 +30,8 @@ html(lang="en")
             .left
                 include ../block/form/form
                 include ../block/form-date/form-date
-                include ../block/form-date-dropdown/form-date-dropdown
-                include ../block/form-date-dropdown/form-date-dropdown
+                +date-dropdown('date dropdown')
+                +date-dropdown('date dropdown')
                 include ../block/form-filter-dropdown/form-filter-dropdown
                 include ../block/form-subscrip/form-subscrip
                 +rooms-filter
@@ -36,6 +39,7 @@ html(lang="en")
                  "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
                 +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
                 {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})
+                +card-find-rooms({title: 'Найдём номера под ваши пожелания'})
             .center
                 div
                     +checkbox-button('checkbox-buttons','Можно курить',
@@ -50,7 +54,7 @@ html(lang="en")
                 div
                     +rate-btn
                 div
-                    include ../block/dropdown/dropdown
+                    +dropdown('dropdown')
                 div
                     +input-chbox('TEST')
                 div
