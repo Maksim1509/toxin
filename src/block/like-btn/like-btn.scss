@@ -2,10 +2,10 @@
     @include text-body;
     font-size: 10px;
     color: $dark-shade--25;
-    padding: 10px;
 }
 
 @import './__input/like-btn__input.scss';
 @import './__icon/like-btn__icon.scss';
 @import './__count/like-btn__count.scss';
 @import './__wrap/like-btn__wrap.scss';
+@import './__title/like-btn__title.scss';

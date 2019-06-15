@@ -2,10 +2,12 @@ mixin feedback(...contents)
     .feedback
         for content in contents
             .feedback__autor
-                img(src="../block/feedback/image/autor.png", alt="photo").feedback__image
-                .feedback__name= content.name
-                .feedback__data= content.data
+                img(src=content.img, alt="photo").feedback__image
+                .feedback__autor-info
+                    .feedback__name= content.name
+                    .feedback__data= content.data
             .feedback__content
                 .feedback__like-btn
-                    +like-btn
+                    +like-btn(content.id)
                 .feedback__text= content.text
+                
