@@ -1,7 +1,8 @@
-.radio-btn
-    .checkbox-button__title Radio Buttons
-    form(action="/")
-        input(type="radio", name="sex", value="male" id="radio-male").radio-btn__input
-        label(for="radio-male").radio-btn__text Мужчина
-        input(type="radio", name="sex", value="female" id="radio-female").radio-btn__input
-        label(for="radio-female").radio-btn__text Женщина
+mixin radio-btn(id_left, id_right, title)
+    .radio-btn
+        .checkbox-button__title= title
+        form(action="/")
+            input(type="radio", name="sex", value="male" id=id_left).radio-btn__input
+            label(for=id_left).radio-btn__text Мужчина
+            input(type="radio", name="sex", value="female" id=id_right).radio-btn__input
+            label(for=id_right).radio-btn__text Женщина

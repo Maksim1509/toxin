@@ -10,7 +10,8 @@
     background: $bcgColor;
     transition: 0.3s;
     cursor: pointer;
-} 
+}
+
 .button {
     @include button(white, none, 
     linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%));

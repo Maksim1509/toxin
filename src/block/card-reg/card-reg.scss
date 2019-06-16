@@ -1,0 +1,14 @@
+@import './card-reg__input-name.scss';
+@import './card-reg__radio-btn.scss';
+@import './card-reg__login-details.scss';
+@import './card-reg__login.scss';
+@import './card-reg__password.scss';
+@import './card-reg__input-surname.scss';
+@import './card-reg__toggle.scss';
+@import './card-reg__foot.scss';
+@import './car-reg__foot-text.scss';
+
+.card-reg {
+    @include card;
+    margin: 10px;
+}

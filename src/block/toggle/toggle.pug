@@ -1,7 +1,6 @@
-mixin toggle
+mixin toggle(title)
     .toggle
-        .checkbox-button__title toggle 
+        .checkbox-button__title= title 
         form(action="/")
             input(type="checkbox", id="toggle", name="toggle", value="subscribe").toggle__input
             label(for="toggle").toggle__text Получать спецпредложения
-        

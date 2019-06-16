@@ -1,35 +1,4 @@
-@import '../fonts/fonts.scss';
-@import './var.scss';
-
-@import '../block/form/form.scss';
-@import '../block/form/__field/form__field.scss';
-
-@import '../block/form-date/form-date.scss';
-@import '../block/form-date-dropdown/form-date-dropdown.scss';
-@import '../block/form-filter-dropdown/form-filter-dropdown.scss';
-@import '../block/form-subscrip/form-subscrip.scss';
-@import '../block/rooms-filter/rooms-filter.scss';
-@import '../block/dropdown/dropdown.scss';
-
-
-@import '../block/radio-btn/radio-btn.scss';
-@import '../block/toggle/toggle.scss';
-@import '../block/like-btn/like-btn.scss';
-@import '../block/rate-btn/rate-btn.scss';
-@import '../block/range-slider/range-slider.scss';
-
-@import '../block/button/button.scss';
-@import '../block/link-icon/link-icon.scss';
-@import '../block/pagination/pagination.scss';
-@import '../block/checkbox-list/checkbox-list.scss';
-@import '../block/input-chbox/input-chbox.scss';
-@import '../block/title/title.scss';
-@import '../block/rich-chbox/rich-chbox.scss';
-@import '../block/bullet/bullet.scss';
-@import '../block/room-info/room-info.scss';
-@import '../block/feedback/feedback.scss';
-@import '../block/card-title/card-title.scss';
-@import '../block/card-find-rooms/card-find-rooms.scss';
+@import './import.scss';
 
 
 main {

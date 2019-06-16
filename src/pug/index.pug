@@ -1,23 +1,5 @@
-include ../block/checkbox-button/checkbox-button
-include ../block/toggle/toggle
-include ../block/rate-btn/rate-btn
-include ../block/button/button
-include ../block/link-icon/link-icon
-include ../block/pagination/pagination
-include ../block/rooms-filter/rooms-filter
-include ../block/range-slider/range-slider
-include ../block/checkbox-list/checkbox-list
-include ../block/input-chbox/input-chbox
-include ../block/title/title
-include ../block/rich-chbox/rich-chbox
-include ../block/bullet/bullet
-include ../block/room-info/room-info
-include ../block/feedback/feedback
-include ../block/like-btn/like-btn
-include ../block/card-title/card-title
-include ../block/card-find-rooms/card-find-rooms
-include ../block/form-date-dropdown/form-date-dropdown
-include ../block/dropdown/dropdown
+include ./includes
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -28,8 +10,8 @@ html(lang="en")
     body
         main
             .left
-                include ../block/form/form
-                include ../block/form-date/form-date
+                +form('Email', 'text field')
+                +form-date('date field')
                 +date-dropdown('date dropdown')
                 +date-dropdown('date dropdown')
                 include ../block/form-filter-dropdown/form-filter-dropdown
@@ -40,15 +22,16 @@ html(lang="en")
                 +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
                 {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})
                 +card-find-rooms({title: 'Найдём номера под ваши пожелания'})
+                +card-reg
             .center
                 div
                     +checkbox-button('checkbox-buttons','Можно курить',
                     'Можно с питомцами',
                     'Можно пригласить гостей (до 10 человек)')
                 div
-                    include ../block/radio-btn/radio-btn
+                    +radio-btn('male', 'female', 'radio buttons')
                 div
-                    +toggle
+                    +toggle('toggle')
                 div
                     +like-btn('like-btn', 'like buttnon')
                 div
