@@ -11,3 +11,4 @@ import '../block/pagination/pugination';
 import '../block/rooms-filter/rooms-filter';
 import '../block/checkbox-list/checkbox-list';
 import '../block/input-chbox/input-chbox';
+import '../block/form-date/form-date';

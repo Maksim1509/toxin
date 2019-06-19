@@ -20,6 +20,5 @@ mixin card-reg
         .card-reg__btn-to-pay
             +button('перейти к оплате', 1).button.button--forward
         .card-reg__foot
-            span.car-reg__foot-text Уже есть аккаунт на Toxin
-            +button('Войти')(class="button  button--empty")
+            +card-foot('Уже есть аккаунт на Toxin', 'Войти')
         

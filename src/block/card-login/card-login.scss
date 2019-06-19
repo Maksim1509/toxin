@@ -1,0 +1,7 @@
+@import './card-login__btn.scss';
+@import './card-login__mail.scss';
+@import './card-login__pass.scss';
+
+.card-login {
+    @include card;
+}

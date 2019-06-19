@@ -1,0 +1,32 @@
+include ./__icon/card-room-order__icon
+mixin card-room-order(info)
+    section.card-room-order
+        .card-room-order__title
+            span.card-room-order__number= info.number
+            span.card-room-order__type= info.type
+            span.card-room-order__price
+                strong.card-room-order__price-item= info.price
+                |  в сутки
+        .card-room-order__date-dropdown
+            +date-dropdown('прибытие')
+            +date-dropdown('выезд')
+        .card-room-order__dropdown
+            +dropdown('гости')
+        ul.card-room-order__price-list
+            li.card-room-order__price-list-item
+                span.card-room-order__left-col 9 990₽ х 4 суток
+                span.card-room-order-right-col 39 960₽
+            li.card-room-order__price-list-item
+                span.card-room-order__left-col Сбор за услуги: скидка 2 179₽
+                    +card-room-order__icon
+                span.card-room-order-right-col 0₽
+            li.card-room-order__price-list-item
+                span.card-room-order__left-col Сбор за дополнительные услуги
+                    +card-room-order__icon
+                span.card-room-order-right-col 300₽
+        .card-room-order__total
+            span Итого
+            .card-room-order__total-line
+            span.card-room-order-right-col 38 081₽
+        .card-room-order__btn
+            +button('забронировать', 1).button.button--forward        

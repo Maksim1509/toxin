@@ -1,0 +1,11 @@
+mixin card-login()
+    .card-login
+        +card-title('Войти')
+        .card-login__mail
+            +form('card-login__mail', 'Email')
+        .card-login__pass
+            +form('card-login__pass', 'Пароль')
+        .card-login__btn
+            +button('Войти', 1).button.button--forward
+        .card-login__foot
+            +card-foot('Нет аккаунта на Toxin?', 'создать')

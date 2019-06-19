@@ -1,0 +1,17 @@
+@import './card-room-order__number.scss';
+@import './card-room-order__type.scss';
+@import './card-room-order__price.scss';
+@import './card-room-order__price-item.scss';
+@import './card-room-order__date-dropdown.scss';
+@import './__icon/card-room-order__icon.scss';
+@import './card-room-order__price-list-item.scss';
+@import './card-room-order__price-list.scss';
+@import './card-room-order__left-col.scss';
+@import './card-room-order-right-col.scss';
+@import './card-room-order__total.scss';
+@import './card-room-order__total-line.scss';
+
+
+.card-room-order {
+    @include card;
+}

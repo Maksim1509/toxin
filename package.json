@@ -20,6 +20,7 @@
     "sass": "^1.18.0"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1"
   }

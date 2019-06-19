@@ -1,0 +1,17 @@
+.card-room-order__icon {
+    border: 1px solid $dark-shade--25;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $montserrat--bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-shade--25;
+    margin-left: 5px;
+}

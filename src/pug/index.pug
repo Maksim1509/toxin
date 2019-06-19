@@ -6,6 +6,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        script(src="../../node_modules/air-datepicker/dist/js/datepicker.min.js")
         title TOXIN
     body
         main
@@ -47,6 +48,9 @@ html(lang="en")
                      discription: 'Ширина коридоров в номере не менее 91 см.'},
                     {main: 'Помощник для инвалидов',
                      discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
+                div
+                    +card-room-order({number: '№ 888', type: 'люкс', price: '9 990₽'})
+                    +card-login
             .right
                 div
                     +range-slider

@@ -3,6 +3,7 @@
 
 main {
     display: flex;
+    justify-content: space-between;
     .left, .center, .right {
         min-width: 350px;
         max-width: 30%;

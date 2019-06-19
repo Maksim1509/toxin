@@ -1,3 +1,6 @@
 .form-date {
-    
+    cursor: pointer;
 }
+
+@import './datepicker--cells-days.scss';
+@import './datepicker--day-name.scss';

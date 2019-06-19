@@ -1,4 +1,6 @@
-.card-reg__foot {
+@import './card-foot__text.scss';
+
+.card-foot {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
