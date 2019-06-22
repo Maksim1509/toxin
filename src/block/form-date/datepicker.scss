@@ -1,12 +1,20 @@
 .datepicker {
     width: 320px;
-    height: 369px;
     background: #FFFFFF;
     border: 1px solid $dark-shade--25;
     box-sizing: border-box;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
-    padding: 20px 0;
+    padding: 20px;
+    padding-right: 19px;
+    z-index: 1000000;
+}
+//календарь
+.datepicker--content {
+    padding: 0;
+}
+.datepicker--cells{
+    width: 279.4px;
 }
 //шапка
 .datepicker--nav {
@@ -19,7 +27,44 @@
     line-height: 20px;
     color: $purple;
 }
+//дни недели
+.datepicker--days-names {
+    @include text-h3;
+    flex-wrap: nowrap;
+    width: 279.13px;
+}
 //ячейки
 .datepicker--cell-day {
-
+    height: 40px;
+    width: 39.88px;
+    cursor: pointer;
 }
+//кнопки
+.datepicker--buttons {
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.datepicker--button {
+    @include text-h3;
+    color: $dark-shade--50;
+    text-transform: uppercase;
+    height: 15px;
+    flex: none;
+    &:hover {
+        background: #FFFFFF;
+        color: $dark-shade--50;
+    }
+}
+.-apply- {
+    color: $purple;
+    &:hover {
+        color: $purple;
+    }
+}
+ //точка
+ .datepicker--pointer {
+     display: none;
+ }
