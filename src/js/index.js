@@ -12,3 +12,5 @@ import '../block/rooms-filter/rooms-filter';
 import '../block/checkbox-list/checkbox-list';
 import '../block/input-chbox/input-chbox';
 import '../block/form-date/form-date';
+import '../block/form-filter-dropdown/form-filter-dropdown';
+import '../block/form-date-dropdown/form-date-dropdown';
