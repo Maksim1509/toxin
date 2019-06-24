@@ -3,8 +3,7 @@ mixin card-find-rooms(contents)
         .card-find-rooms__title
             +card-title(contents.title)
         .card-find-rooms__select-date
-            +date-dropdown('прибытие')
-            +date-dropdown('выезд')
+            +date-dropdown('прибытие', 'выезд')
         .card-find-rooms__dropdown
             +dropdown('гости')
         .card-find-rooms__btn
