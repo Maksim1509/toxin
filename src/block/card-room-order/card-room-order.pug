@@ -8,8 +8,7 @@ mixin card-room-order(info)
                 strong.card-room-order__price-item= info.price
                 |  в сутки
         .card-room-order__date-dropdown
-            +date-dropdown('прибытие')
-            +date-dropdown('выезд')
+            +date-dropdown('прибытие', 'выезд')
         .card-room-order__dropdown
             +dropdown('гости')
         ul.card-room-order__price-list

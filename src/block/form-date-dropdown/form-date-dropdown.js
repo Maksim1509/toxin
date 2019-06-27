@@ -19,7 +19,7 @@ Array.from(formsDateDropdown).map(formDateDropdown => $(formDateDropdown).datepi
       const field = formDateDropdown;
       const nextField = field.parentElement.nextSibling;
       const prevField = field.parentElement.previousSibling;
-      console.log(nextField);
+
       if (nextField === null) {
         prevField.querySelector('.form-date-dropdown').value = selectDate[0];
         field.value = selectDate[1] === undefined ? '' : selectDate[1];
@@ -30,8 +30,23 @@ Array.from(formsDateDropdown).map(formDateDropdown => $(formDateDropdown).datepi
     });
   },
   onShow: (inst, ac) => {
-    console.log(inst);
+    const field = inst.el;
+    if (field.parentElement.classList.contains('form-date-dropdown__right')) {
+      console.log(inst.$datepicker[0].querySelector('.-apply-'));
+      // inst.$datepicker[0].querySelector('.-apply-').addEventListener('click', () => {
+      //   console.log(1111);
+      //   inst.$datepicker[0].setAttribute('style', 'left: -100000px');
+      // });
+      field.parentElement.appendChild(inst.$datepicker[0]);
+      inst.$datepicker[0].setAttribute('style', 'left: -170px; top: 75px');
+      console.log('тут устанавливаеться позиция при появлении каллендаря');
+    }
+    // inst.$datepicker[0].removeAttribute('style');
   },
+  onHide: (inst) => {
+    inst.$datepicker[0].setAttribute('style', 'left: -100000px; top: 70px');
+  },
+  autoClose: true,
   prevHtml: '<i class="material-icons">arrow_back</i>',
   nextHtml: '<i class="material-icons">arrow_forward</i>',
   clearButton: true,
@@ -55,7 +70,10 @@ const addApply = () => {
     applyBtn.addEventListener('click', function () {
       const currentDatapicker = this.parentElement.parentElement;
       console.log(currentDatapicker);
-      currentDatapicker.style.left = '-9999999px';
+      console.log(111)
+
+      currentDatapicker.setAttribute('style', 'left: -100000px');
+      console.log(currentDatapicker);
 
       Array.from(formsDateDropdown).map(elem => elem.blur());
     });
