@@ -109,7 +109,9 @@
     border-radius: 0px;
  }
 
-.datepicker-position {
-    left: -170px;
-    top: 75px;
+.datepicker-inline {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    top: 70px;
 }
