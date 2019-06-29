@@ -1,6 +1,15 @@
 @import './card-room__photos.scss';
+@import './card-room__info.scss';
+@import './card-room__line.scss';
+@import './card-room__feedback.scss';
+@import './card-room__rate-btn.scss';
 @import './slick.scss';
 
 .card-room {
-
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

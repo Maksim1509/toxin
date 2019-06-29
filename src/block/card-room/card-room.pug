@@ -1,8 +1,23 @@
-mixin card-room
+mixin card-room(info)
     .card-room
         .card-room__photos
             .card-room__photo
                 img(src="../block/card-room/img/room-photo-1.png", alt="photo")
             .card-room__photo
                 img(src="../block/card-room/img/room-photo-2.png", alt="photo")
-            
+            .card-room__photo
+                img(src="../block/card-room/img/room-photo-3.png", alt="photo")
+            .card-room__photo
+                img(src="../block/card-room/img/room-photo-4.png", alt="photo")
+        .card-room__info
+            span.card-room__number= info.number
+            span.card-room__type= info.type
+            span.card-room__price
+                strong.card-room__price-item= info.price
+                |  в сутки
+        .card-room__line
+        .card-room__rate-btn
+            +rate-btn
+            .card-room__feedback
+                srtong.card-room__feedback-count 145
+                | отзывов

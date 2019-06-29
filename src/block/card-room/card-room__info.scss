@@ -1,0 +1,41 @@
+.card-room__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.card-room__number {
+    font-family: $quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-shade--100;
+    margin-right: 5px;
+}
+
+.card-room__price {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark-shade--50;
+    margin-left: 32px;
+}
+
+.card-room__price-item {
+    font-family: $montserrat--bold;
+}
+
+.card-room__type {
+    font-family: $montserrat--bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+}
