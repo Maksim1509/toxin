@@ -1,9 +1,10 @@
 .card-room__info {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
     margin-top: 20px;
+    width: 233px;
 }
 
 .card-room__number {
@@ -14,6 +15,7 @@
     line-height: 17px;
     color: $dark-shade--100;
     margin-right: 5px;
+    
 }
 
 .card-room__price {

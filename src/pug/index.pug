@@ -72,7 +72,9 @@ html(lang="en")
             div
                 +feedback({id: 'feedback__like-btn', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
                  text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
-            div
-                +card-room({number: '№ 888', type: 'люкс', price: '9 990₽'})
+                div
+                    +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    +card-room({number: '№ 840', type: '', price: '9 990₽',rating: 4, fb: 65})
+            +header
         script(src="../js/index.js")
                

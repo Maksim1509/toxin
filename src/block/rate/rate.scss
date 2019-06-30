@@ -1,0 +1,31 @@
+.rate {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    &:hover  {
+        .rate-btn__star:before {
+            display: none;
+        }
+        .rate-btn__star:after {
+            display: block;
+        }
+    }
+}
+.rate__star {
+    font-size: 24px;
+    color: $purple;
+    color: $purple;
+    line-height: 20px;
+    font-size: 28px;
+    width: 24px;
+    &:before {
+        content: '\2606';
+    }
+    &:after {
+        content: '\2605';
+        display: none;
+    }
+}
+.rate__star--full:before { 
+    content: '\2605';
+}

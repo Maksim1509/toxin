@@ -2,4 +2,12 @@
     max-width: 270px;
     width: 270px;
     display: flex;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.card-room__img {
+    width: 270px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
