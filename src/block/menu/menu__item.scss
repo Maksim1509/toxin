@@ -1,0 +1,33 @@
+.menu__item {
+    box-sizing: border-box;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-shade--50;
+    text-decoration: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        font-family: $montserrat--bold;
+        color: $dark-shade--75;
+    }
+}
+.menu__item-icon {
+    width: 24px;
+    height: 21px;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color:  $dark-shade--50;
+}
+
+.menu__li {
+    display: flex;
+    align-items: center;
+}

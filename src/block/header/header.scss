@@ -1,3 +1,7 @@
+@import './header__menu.scss';
+@import './header__btns.scss';
+@import './header__user-name.scss';
+
 .header {
     max-width: 1440px;
     width: 100%;
@@ -7,4 +11,6 @@
     display: flex;
     align-items: center;
     padding-left: 140px;
+    
+    margin-top: 150px;
 }

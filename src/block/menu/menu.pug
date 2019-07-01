@@ -1,0 +1,11 @@
+mixin menu(items)
+    nav
+        ul.menu
+            each item in items
+                if item[0] === 'i' 
+                    li.menu__li
+                        a(href="http://").menu__item= item.slice(1)
+                            i.material-icons.menu__item-icon expand_more
+                else
+                    li.menu__li
+                        a(href="http://").menu__item= item

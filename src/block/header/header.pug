@@ -1,6 +1,14 @@
-mixin header
+mixin header(login)
     header.header
         .header__logo
             +logo
         .header__menu
-        .header_btns
+            +menu(['Home', 'About Us', 'iServices', 'Careers', 'News', 'Documentation'])
+        if login
+            .header__user-name= login
+        else
+            .header__btns
+                .header__btn
+                    +button('login')(class="button button--empty")
+                .header__btn
+                    +button('REGISTER')(class="button")

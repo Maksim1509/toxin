@@ -1,0 +1,9 @@
+@import './menu__item.scss';
+@import './menu--active.scss';
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
