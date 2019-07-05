@@ -1,0 +1,36 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo-coll {
+    width: 260px;
+}
+.footer__text {
+    @include text-body;
+    margin-top: 20px;
+}
+
+.footer__menu {
+    list-style: none;
+    margin: 0;
+}
+.footer__menu-title {
+    @include text-h3;
+    text-transform: uppercase;
+}
+.footer__menu-item {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-shade--50;
+    margin-top: 20px;
+}
+
+.footer__subscrp-text {
+    @extend .footer__text;
+    width: 196px;
+    margin-bottom: 20px;
+}

@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'fa-brands';
+	src: url('../fonts/webfonts/fa-brands-400.eot');
+  src: local('☺'),
+   url('../fonts/webfonts/fa-brands-400.woff') format('woff'),
+    url('../fonts/webfonts/fa-brands-400.ttf') format('truetype'),
+     url('../fonts/webfonts/fa-brands-400.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: 'Montserrat Bold';

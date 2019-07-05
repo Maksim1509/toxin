@@ -1,3 +1,4 @@
-form.form
-    label.form__title subscription text field
-        input(type="text" name="email" placeholder="Email").form__field.form-subscrip
+mixin form-subscrip(title)
+    form.form
+        label.form__title= title
+            input(type="text" name="email" placeholder="Email").form__field.form-subscrip

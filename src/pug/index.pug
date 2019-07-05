@@ -16,7 +16,7 @@ html(lang="en")
                 +form-date('date field')
                 +date-dropdown('date dropdown', 'date dropdown')
                 include ../block/form-filter-dropdown/form-filter-dropdown
-                include ../block/form-subscrip/form-subscrip
+                +form-subscrip('subscription text field')
                 +rooms-filter
                 +checkbox-list('expandable checkbox list', 'Завтрак',
                  "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
@@ -77,5 +77,12 @@ html(lang="en")
                     +card-room({number: '№ 840', type: '', price: '9 990₽',rating: 4, fb: 65})
             +header
             +header('Cosmin Negoita')
+            +footer({text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
+                nav_title: 'Navigation', nav: ['About Us', 'News', 'Support', 'Products'], 
+                about_title: 'About Us', about: ['Who we are', 'Our team', 'Careers', 'Investors'],
+                support_title: 'Support', support: ['Documentation', 'Community', 'Get in Touch'],
+                subscrp: 'Subscribe to our newsletter',
+                subscrp_text: 'Receive our latest news and promotions in your inbox!',
+                cb_text: 'Copyright © 2018 Toxin UI Kit. All rights reserved.'})
         script(src="../js/index.js")
                
