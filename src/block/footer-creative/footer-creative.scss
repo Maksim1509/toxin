@@ -1,0 +1,28 @@
+.footer-creative {
+    max-width: 1440px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.footer-creative__text {
+    width: 38.8888%;
+    text-align: center;
+    @include text-body;
+    margin: 20px 0 25px;
+}
+
+.footer-creative__icon {
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 23px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
