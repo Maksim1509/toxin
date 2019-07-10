@@ -4,6 +4,7 @@ import clearValue from './clearValue';
 import addApply from './addApply';
 
 const wrap = $('.form-date-dropdown__container');
+console.log(wrap);
 const wrap1 = document.querySelectorAll('.form-date-dropdown__container');
 
 Array.from(wrap).map(el => $(el).datepicker({ // инициализация air-datepicker

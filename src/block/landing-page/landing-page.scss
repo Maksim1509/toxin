@@ -1,0 +1,25 @@
+.landing-page {}
+
+.landing-page__body {
+    background: url('../block/landing-page/img/img1.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1440px;
+    height: 900px;
+    position: relative;
+}
+
+.landing-page__card {
+    margin-left: 140px;
+    margin-top: 70px;
+}
+
+.landing-page__text{
+    display: inline-block;
+    width: 297px;
+    @include text-body;
+    text-align: right;
+    position: absolute;
+    bottom: 18px;
+    right: 134px;
+}

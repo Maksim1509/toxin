@@ -1,4 +1,7 @@
 .dropdown__body {
+    position: absolute;
+    background: #ffffff;
+    z-index: 10000;
     margin-top: -3px;
     box-sizing: border-box;
     width: 320px;
