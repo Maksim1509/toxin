@@ -1,9 +1,9 @@
-mixin header(login)
+mixin header(menu_items, login)
     header.header
         .header__logo
             +logo
         .header__menu
-            +menu(['Home', 'About Us', 'iServices', 'Careers', 'News', 'Documentation'])
+            +menu(menu_items)
         if login
             .header__user-name= login
         else
