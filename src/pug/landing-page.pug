@@ -10,13 +10,7 @@ html(lang="en")
         title toxin
     body
         main
-            +header(['Home', 'About Us', 'iServices', 'Careers', 'News', 'Documentation'])
+            +header(menu_page, buttons_page)
             +landing-page
-            +footer({text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
-                nav_title: 'Navigation', nav: ['About Us', 'News', 'Support', 'Products'], 
-                about_title: 'About Us', about: ['Who we are', 'Our team', 'Careers', 'Investors'],
-                support_title: 'Support', support: ['Documentation', 'Community', 'Get in Touch'],
-                subscrp: 'Subscribe to our newsletter',
-                subscrp_text: 'Receive our latest news and promotions in your inbox!',
-                cb_text: 'Copyright © 2018 Toxin UI Kit. All rights reserved.'})
+            +footer(footer_items_page)
         script(src="../block/landing-page/landing-page.js")

@@ -75,15 +75,9 @@ html(lang="en")
                 div
                     +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
                     +card-room({number: '№ 840', type: '', price: '9 990₽',rating: 4, fb: 65})
-            +header(['Home', 'About Us', 'iServices', 'Careers', 'News', 'Documentation'])
-            +header(['Home', 'About Us', 'iServices', 'Careers', 'News', 'Documentation'], 'Cosmin Negoita')
-            +footer({text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
-                nav_title: 'Navigation', nav: ['About Us', 'News', 'Support', 'Products'], 
-                about_title: 'About Us', about: ['Who we are', 'Our team', 'Careers', 'Investors'],
-                support_title: 'Support', support: ['Documentation', 'Community', 'Get in Touch'],
-                subscrp: 'Subscribe to our newsletter',
-                subscrp_text: 'Receive our latest news and promotions in your inbox!',
-                cb_text: 'Copyright © 2018 Toxin UI Kit. All rights reserved.'})
+            +header(menu_ui, buttons_ui)
+            +header(menu_ui, buttons_ui, 'Cosmin Negoita')
+            +footer(footer_items_ui)
             +footer-creative('Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.')
         script(src="../js/index.js")
                
