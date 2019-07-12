@@ -16,8 +16,8 @@ Array.from(wrap).map(el => $(el).datepicker({ // инициализация air-
   onSelect: (fd, dates, inst) => {
     const selectDate = [];
     dates.forEach((date) => {
-      const day = date.getDate() > 10 ? date.getDate() : `0${date.getDate()}`;
-      const month = date.getMonth() > 10 ? date.getMonth() : `0${date.getMonth() + 1}`;
+      const day = date.getDate() > 9 ? date.getDate() : `0${date.getDate()}`;
+      const month = date.getMonth() > 9 ? date.getMonth() : `0${date.getMonth() + 1}`;
       const year = date.getFullYear();
       selectDate.push(`${day}.${month}.${year}`);
       const field = el;

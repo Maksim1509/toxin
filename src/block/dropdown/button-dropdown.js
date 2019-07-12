@@ -1,56 +1,68 @@
-const button = document.querySelectorAll('.dropdown__header');
+const showDropdown = () => {
+  const dp = document.querySelectorAll('.dropdown__header');
 
-Array.from(button).map(btn => btn.addEventListener('click', () => {
-  const drop = btn.nextSibling.querySelector('.dropdown__body');
-  const plus = drop.querySelectorAll('.plus');
-  const minus = drop.querySelectorAll('.minus');
-  const values = drop.querySelectorAll('.dropdown__value');
-  const accept = drop.querySelector('.dropdown__button--accept');
-  const buttonClear = drop.querySelector('.dropdown__button--clear');
-  const totalGuests = btn.querySelector('.dropdown__header-text');
-
-  if (drop.classList.contains('dropdown__body--drop')) {
-    drop.classList.remove('dropdown__body--drop');
-  } else {
-    drop.classList.add('dropdown__body--drop');
-  }
-
-  for (let i = 0; i < plus.length; i += 1) {
-    plus[i].addEventListener('click', () => {
-      buttonClear.classList.add('button--show');
-      const value = plus[i].previousSibling;
-      value.textContent = Number(value.textContent) + 1;
-    });
-  }
-
-  for (let i = 0; i < minus.length; i += 1) {
-    minus[i].addEventListener('click', () => {
-      const value = minus[i].nextSibling;
-      if (value.textContent !== '0') {
-        value.textContent = Number(value.textContent) - 1;
-      }
-    });
-  }
-
-  accept.addEventListener('click', () => {
-    let result = 0;
-    for (let i = 0; i < values.length; i += 1) {
-      const currentValue = Number(values[i].textContent);
-      result += currentValue;
+  Array.from(dp).map(el => el.addEventListener('click', () => {
+    const drop = el.nextSibling.querySelector('.dropdown__body');
+    if (drop.classList.contains('dropdown__body--drop')) {
+      drop.classList.remove('dropdown__body--drop');
+    } else {
+      drop.classList.add('dropdown__body--drop');
     }
+  }));
+};
+
+const addition = () => {
+  const plus = document.querySelectorAll('.plus');
+  Array.from(plus).map(el => el.addEventListener('click', (e) => {
+    const a = e.target;
+    const value = a.previousSibling;
+    value.textContent = Number(value.textContent) + 1;
+    const btnClear = a.parentNode.parentNode.parentNode.querySelector('.dropdown__button--clear');
+    btnClear.classList.add('button--show');
+  }));
+};
+
+const subtract = () => {
+  const minus = document.querySelectorAll('.minus');
+  Array.from(minus).map(el => el.addEventListener('click', (e) => {
+    const a = e.target;
+    const value = a.nextSibling;
+    if (value.textContent !== '0') {
+      value.textContent = Number(value.textContent) - 1;
+    }
+  }));
+};
+
+const  aplly = () => {
+  const accept = document.querySelectorAll('.dropdown__button--accept');
+  Array.from(accept).map(el => el.addEventListener('click', (e) => {
+    const values = e.target.parentNode.parentNode.querySelectorAll('.dropdown__value');
+    const result = Array.from(values).reduce((acc, val) => Number(val.textContent) + acc, 0);
+
+    const totalGuests = e.target.parentNode.parentNode.parentNode.previousSibling.querySelector('span');
     if (result === 1) {
       totalGuests.textContent = `${result} гость`;
     } else {
       totalGuests.textContent = `${result} гостей`;
     }
-    drop.classList.remove('dropdown__body--drop');
-  });
+    e.target.parentNode.parentNode.classList.remove('dropdown__body--drop');
+  }));
+};
 
-  buttonClear.addEventListener('click', () => {
-    for (let i = 0; i < values.length; i += 1) {
-      values[i].textContent = 0;
-    }
+const clear = () => {
+  const btnClear = document.querySelectorAll('.dropdown__button--clear');
+
+  Array.from(btnClear).map(el => el.addEventListener('click', (e) => {
+    const totalGuests = e.target.parentNode.parentNode.parentNode.previousSibling.querySelector('span');
     totalGuests.textContent = 'Сколько гостей';
-    buttonClear.classList.remove('button--show');
-  });
-}));
+
+    const values = e.target.parentNode.parentNode.querySelectorAll('.dropdown__value');
+    Array.from(values).map(val => val.textContent = 0);
+  }));
+};
+
+showDropdown();
+addition();
+subtract();
+aplly();
+clear();
