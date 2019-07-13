@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/pug/landing-page.pug --open",
+    "start-search": "parcel src/pug/search-room-page.pug --open",
     "start-ui": "parcel src/pug/index.pug --open",
     "build": "parcel build src/pug/index.pug src/pug/landing-page.pug -d docs --public-url ./"
   },

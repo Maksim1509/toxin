@@ -6,7 +6,7 @@ mixin dropdown__body-item(name)
             .dropdown__value 0
             .dropdown__select-button.plus +
 mixin dropdown(title)
-    .form
+    .form(class!=attributes.class)
         .form__title= title
         .form__field.dropdown__header
             span.dropdown__header-text Сколько гостей

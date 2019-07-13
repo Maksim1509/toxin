@@ -1,0 +1,48 @@
+mixin search-room
+    .search-room__container
+        +header(menu_page, buttons_page)
+        .search-room__main
+            section.search-room__filter
+                +date-filter
+                +dropdown(class="dropdown--small")
+                +range-slider
+                +checkbox-button('checkbox buttons','Можно курить',
+                        'Можно с питомцами',
+                        'Можно пригласить гостей (до 10 человек)')
+                +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор',
+                        discription: 'Ширина коридоров в номере не менее 91 см.'},
+                        {main: 'Помощник для инвалидов',
+                        discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
+                +rooms-filter
+                +checkbox-list('expandable checkbox list', 'Завтрак',
+                    "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
+            section.search-room__content
+                .search-room__title Номера, которые мы для вас подобрали
+                .search-room__cards
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                    .search-room__card-room
+                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                +pagination
+        .search-room__footer        
+            +footer(footer_items_page)
