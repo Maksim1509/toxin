@@ -1,7 +1,14 @@
 @import '../block/range-slider/jquery-ui.structure.min.css';
 
 .range-slider {
-    margin: 10px;
+    width: 266px;
+}
+
+.range-slider__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .ui-slider {
     box-sizing: border-box;
@@ -27,8 +34,9 @@
     }
 }
 .range-slider__title {
-    margin-right: 68px;
     @include text-h3;
+    padding: 0;
+    text-transform: uppercase;
 }
 
 .range-slider__value {
@@ -36,5 +44,16 @@
     font-size: $fsz--h3;
     font-family: $montserrat;
     color: $dark-shade--50;
-    margin-bottom: 23px;
+    width: 102px;
+}
+
+.range-slider__text {
+    display: inline-block;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark-shade--50;
+    margin-top: 10.5px;
 }

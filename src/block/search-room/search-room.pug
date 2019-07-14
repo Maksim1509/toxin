@@ -1,20 +1,24 @@
 mixin search-room
-    .search-room__container
-        +header(menu_page, buttons_page)
+    .search-room
+        .search-room__header
+            +header(menu_page, buttons_page)
         .search-room__main
             section.search-room__filter
-                +date-filter
-                +dropdown(class="dropdown--small")
-                +range-slider
-                +checkbox-button('checkbox buttons','Можно курить',
+                +date-filter('даты пребывания в отеле')
+                .search-room__dropdown
+                    +dropdown('гости')(class="dropdown--small")
+                +range-slider('диапазон цены', 'Стоимость за сутки пребывания в номере')
+                .search-room__chbox-btn
+                    +checkbox-button('checkbox buttons','Можно курить',
                         'Можно с питомцами',
                         'Можно пригласить гостей (до 10 человек)')
-                +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор',
+                +rich-chbox('доступность', {main: 'Широкий коридор',
                         discription: 'Ширина коридоров в номере не менее 91 см.'},
                         {main: 'Помощник для инвалидов',
                         discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
-                +rooms-filter
-                +checkbox-list('expandable checkbox list', 'Завтрак',
+                .search-room__rooms-filter
+                    +rooms-filter('удобства номера')
+                +checkbox-list('дополнительные удобства', 'Завтрак',
                     "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
             section.search-room__content
                 .search-room__title Номера, которые мы для вас подобрали
@@ -22,7 +26,9 @@ mixin search-room
                     .search-room__card-room
                         +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room({number: '№ 840', type: '', price: '9 990₽',rating: 4, fb: 65})
+                    .search-room__card-room
+                        +card-room({number: '№ 980', type: 'люкс', price: '8500₽',rating: 3, fb: 35})
                     .search-room__card-room
                         +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
                     .search-room__card-room
@@ -41,8 +47,7 @@ mixin search-room
                         +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
                     .search-room__card-room
                         +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
-                    .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
-                +pagination
+                .search-room__pagination      
+                    +pagination
         .search-room__footer        
             +footer(footer_items_page)

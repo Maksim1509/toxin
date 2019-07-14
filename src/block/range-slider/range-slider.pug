@@ -1,5 +1,7 @@
-mixin range-slider
+mixin range-slider(title, text)
     .range-slider
-        label(for="amount").range-slider__title RANGE SLIDER
-        input(type="text" id="amount").range-slider__value
+        .range-slider__header
+            label(for="amount").range-slider__title= title
+            input(type="text" id="amount").range-slider__value
         #slider-range
+        span.range-slider__text= text

@@ -5,9 +5,9 @@ mixin rooms-filter__body-item(name, value)
             .rooms-filter__select-button -
             .rooms-filter__value= value
             .rooms-filter__select-button +
-mixin rooms-filter
-    .form
-        .form__title dropdown
+mixin rooms-filter(title)
+    .form.rooms-filter__container
+        .form__title= title
             .form__field.rooms-filter
                 p.rooms-filter__selected-values
                     span#bad-room 2 cпальни,

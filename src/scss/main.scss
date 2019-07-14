@@ -1,9 +1,13 @@
 @import './import.scss';
 
+html {
+    background: #E5E5E5;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
-    background: #E5E5E5;
+    background: #E5E5E5;;
     max-width: 1440px;
     width: 100%;
 }
@@ -16,7 +20,6 @@ main {
         max-width: 33%;
     }
     flex-wrap: wrap;
-    background: #E5E5E5;
 }
  
 
