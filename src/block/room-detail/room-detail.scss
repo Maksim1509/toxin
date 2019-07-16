@@ -1,0 +1,90 @@
+.room-detail {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.room-detail__photos {
+    display: flex;
+    width: 100%;
+}
+.room-detail__img {
+    height: 485px;
+}
+.room-detail__small-img {
+    width: 459px;
+    display: flex;
+    flex-direction: column;
+}
+.room-detail__img--small1 {
+    height: 243px;
+}
+.room-detail__img--small2 {
+    height: 243px;
+    margin-top: -1px;
+}
+
+.room-detail__main {
+    padding: 70px 140px;
+    display: flex;
+    border-bottom: 1px solid $dark-shade--25;
+}
+
+.room-detail__info {
+    display: flex;
+    flex-direction: column;
+}
+.room-detail__rules-title {
+    padding: 0;
+    margin: 0;
+    @include text-h2;
+    margin-left: 29px;
+}
+.room-detail__rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+.room-detail__rules-list-item {
+    width: 271px;
+    display: flex;
+    align-items: baseline;
+}
+.room-detail__rules-dot-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.room-detail__rules-dot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: $dark-shade--25;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.room-detail__rules-span {
+    @include text-body;
+    display: inline-block;
+}
+
+
+.room-detail__condition {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+.room-detail__cancel {
+    margin-left: 70px;
+}
+.room-detail__cancel-title {
+    margin: 0;
+    padding: 0;
+    @include text-h2;
+}
+.room-detail__cancel-text {
+    width: 341px;
+    @include text-body;
+    margin-top: 20px;
+}

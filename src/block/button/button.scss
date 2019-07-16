@@ -25,5 +25,9 @@
     transition: 0.3s;
 }
 
+.button__wrap-link {
+    text-decoration: none;
+}
+
 @import './--empty/button--empty.scss';
 @import './--forward/button-forward.scss';

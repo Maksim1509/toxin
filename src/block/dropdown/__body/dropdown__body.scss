@@ -16,6 +16,9 @@
     text-transform: uppercase;
     color:$dark-shade--100;
     font-size: $fsz--h3;
+    &--small {
+        width: 266px;
+    }
 }
 
 @import './--drop/dropdown__body--drop.scss';

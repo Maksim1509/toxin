@@ -5,14 +5,14 @@ mixin dropdown__body-item(name)
             .dropdown__select-button.minus -
             .dropdown__value 0
             .dropdown__select-button.plus +
-mixin dropdown(title)
+mixin dropdown(title, body)
     .form(class!=attributes.class)
         .form__title= title
         .form__field.dropdown__header
             span.dropdown__header-text Сколько гостей
             i.material-icons.dropdown__header-icon expand_more
         div
-            .dropdown__body
+            .dropdown__body(class=body)
                 +dropdown__body-item('взрослые')
                 +dropdown__body-item('дети')
                 +dropdown__body-item('младенцы')

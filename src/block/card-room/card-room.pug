@@ -2,13 +2,13 @@ mixin card-room(info)
     .card-room
         .card-room__photos
             .card-room__photo
-                img(src="../block/card-room/img/room-photo-1.png", alt="photo").card-room__img
+                img(src=info.img1, alt="photo").card-room__img
             .card-room__photo
-                img(src="../block/card-room/img/room-photo-2.png", alt="photo").card-room__img
+                img(src=info.img2, alt="photo").card-room__img
             .card-room__photo
-                img(src="../block/card-room/img/room-photo-3.png", alt="photo").card-room__img
+                img(src=info.img3, alt="photo").card-room__img
             .card-room__photo
-                img(src="../block/card-room/img/room-photo-4.png", alt="photo").card-room__img
+                img(src=info.img4, alt="photo").card-room__img
         .card-room__info
             span.card-room__number= info.number
             span.card-room__type= info.type

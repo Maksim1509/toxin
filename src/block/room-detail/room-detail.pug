@@ -1,0 +1,52 @@
+mixin room-detail
+    .room-detail
+        .room-detail__header
+            +header(menu_page, buttons_page)
+        .room-detail__photos
+            .room-detail__main-img                
+                img.room-detail__img(src="../block/room-detail/img/image1.png", alt="img")
+            .room-detail__small-img
+                img.room-detail__img--small1(src="../block/room-detail/img/image2.png", alt="img")
+                img.room-detail__img--small2(src="../block/room-detail/img/image3.png", alt="img")
+        .room-detail__main
+            .room-detail__info
+                .room-detail__params
+                    h3.room-detail__params-title Сведения о номере
+                    +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
+                    {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'},
+                    {icon: 'whatshot', title: 'Уют', discrip: 'Номер оснащён камином'})
+                .room-detail__impressions
+                .room-detail__fb
+                    h3.room-detail__fb-title
+                    +feedback({id: 'feedback__like-btn1', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
+                    text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+                    +feedback({id: 'feedback__like-btn2', img: '../block/feedback/image/image4.png', name: 'Патрисия Стёклышкова', data: 'Неделю назад',
+                    text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+                .room-detail__condition    
+                    .room-detail__rules
+                        h3.room-detail__rules-title Правила
+                        ul.room-detail__rules-list
+                            li.room-detail__rules-list-item
+                                .room-detail__rules-dot-wrap
+                                    .room-detail__rules-dot
+                                span.room-detail__rules-span Нельзя с питомцами
+                            li.room-detail__rules-list-item
+                                .room-detail__rules-dot-wrap
+                                    .room-detail__rules-dot
+                                span.room-detail__rules-span Без вечеринок и мероприятий
+                            li.room-detail__rules-list-item
+                                .room-detail__rules-dot-wrap
+                                    .room-detail__rules-dot
+                                span.room-detail__rules-span Время прибытия — после 13:00, а выезд до 12:00
+                    .room-detail__cancel
+                        h3.room-detail__cancel-title Отмена
+                        .room-detail__cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.            
+            .room-detail__order
+                +card-room-order(rooms_data4)
+        .room-detail__footer
+            +footer(footer_items_page)
+
+
+           
+
+        

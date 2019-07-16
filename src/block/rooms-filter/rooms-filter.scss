@@ -1,8 +1,4 @@
 .rooms-filter {
-
-}
-
-.rooms-filter {
     width: 266px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -14,6 +10,9 @@
     text-transform: none;
     user-select: none;
     margin-top: 4.5px;
+}
+.rooms-filter__container {
+    position: relative;
 }
 
 @import './rooms-filter__icon.scss';

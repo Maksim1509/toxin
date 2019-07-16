@@ -6,7 +6,7 @@ mixin search-room
             section.search-room__filter
                 +date-filter('даты пребывания в отеле')
                 .search-room__dropdown
-                    +dropdown('гости')(class="dropdown--small")
+                    +dropdown('гости', 'dropdown__body--small')(class="dropdown--small")
                 +range-slider('диапазон цены', 'Стоимость за сутки пребывания в номере')
                 .search-room__chbox-btn
                     +checkbox-button('checkbox buttons','Можно курить',
@@ -24,29 +24,29 @@ mixin search-room
                 .search-room__title Номера, которые мы для вас подобрали
                 .search-room__cards
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data1)
                     .search-room__card-room
-                        +card-room({number: '№ 840', type: '', price: '9 990₽',rating: 4, fb: 65})
+                        +card-room(rooms_data2)
                     .search-room__card-room
-                        +card-room({number: '№ 980', type: 'люкс', price: '8500₽',rating: 3, fb: 35})
+                        +card-room(rooms_data3)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data4)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data5)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data6)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data7)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data8)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data9)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data10)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data11)
                     .search-room__card-room
-                        +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
+                        +card-room(rooms_data12)
                 .search-room__pagination      
                     +pagination
         .search-room__footer        
