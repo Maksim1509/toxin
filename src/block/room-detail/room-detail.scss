@@ -31,8 +31,26 @@
 
 .room-detail__info {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
+
+.room-detail__params {
+    margin-bottom: 30px;
+}
+.room-detail__params-title {
+    padding: 0;
+    margin: 0;
+    @include text-h2;
+    margin-bottom: 20px;
+}
+
+.room-detail__fb-title {
+    padding: 0;
+    margin: 0;
+    @include text-h2;
+    margin-bottom: 20px;
+}
+
 .room-detail__rules-title {
     padding: 0;
     margin: 0;
@@ -87,4 +105,73 @@
     width: 341px;
     @include text-body;
     margin-top: 20px;
+}
+
+.room-detail__impressions {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.room-detail__impressions__title {
+    margin: 0;
+    padding: 0;
+    @include text-h2;
+}
+
+
+.room-detail__pie-chart {
+    display: flex;
+    margin-top: 21px;
+}
+.room-detail__pie-chart-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+}
+.room-detail__pie-chart-list-item {
+    display: flex;
+    align-items: center;
+}
+.room-detail__pie-chart-list-text {
+    @include text-body;
+    margin-left: 5px;
+}
+
+.pie_chart {
+    @include text-h3;
+    fill: $purple;
+}
+.pie_chart__count {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.room-detail__pie-chart-list-dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+.room-detail__pie-chart-list-dot2 {
+    @extend .room-detail__pie-chart-list-dot1;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.room-detail__pie-chart-list-dot3 {
+    @extend .room-detail__pie-chart-list-dot1;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.room-detail__pie-chart-list-dot4 {
+    @extend .room-detail__pie-chart-list-dot1;
+    background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+
+.room-info__item:nth-child(3) {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

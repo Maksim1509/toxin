@@ -1,3 +1,5 @@
+include ./pie-chart
+
 mixin room-detail
     .room-detail
         .room-detail__header
@@ -15,9 +17,25 @@ mixin room-detail
                     +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
                     {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'},
                     {icon: 'whatshot', title: 'Уют', discrip: 'Номер оснащён камином'})
-                .room-detail__impressions
+                .room-detail__impressions 
+                    h3.room-detail__impressions__title Впечатления от номера
+                    .room-detail__pie-chart 
+                        +pie-chart
+                        ul.room-detail__pie-chart-list
+                            li.room-detail__pie-chart-list-item
+                                .room-detail__pie-chart-list-dot1
+                                span.room-detail__pie-chart-list-text Великолепно
+                            li.room-detail__pie-chart-list-item
+                                .room-detail__pie-chart-list-dot2
+                                span.room-detail__pie-chart-list-text Хорошо
+                            li.room-detail__pie-chart-list-item
+                                .room-detail__pie-chart-list-dot3
+                                span.room-detail__pie-chart-list-text Удовлетворительно
+                            li.room-detail__pie-chart-list-item
+                                .room-detail__pie-chart-list-dot4
+                                span.room-detail__pie-chart-list-text Разочарован
                 .room-detail__fb
-                    h3.room-detail__fb-title
+                    h3.room-detail__fb-title Отзывы посетителей номера
                     +feedback({id: 'feedback__like-btn1', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
                     text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
                     +feedback({id: 'feedback__like-btn2', img: '../block/feedback/image/image4.png', name: 'Патрисия Стёклышкова', data: 'Неделю назад',

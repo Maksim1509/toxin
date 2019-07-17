@@ -8,7 +8,7 @@
     "start-search": "parcel src/pug/search-room-page.pug --open",
     "start-rd": "parcel src/pug/room-detail-page.pug --open",
     "start-ui": "parcel src/pug/index.pug --open",
-    "build": "parcel build src/pug/index.pug src/pug/search-room-page.pug src/pug/landing-page.pug  -d docs --public-url ./"
+    "build": "parcel build src/pug/index.pug src/pug/room-detail-page.pug src/pug/search-room-page.pug src/pug/landing-page.pug  -d docs --public-url ./"
   },
   "keywords": [],
   "author": "",

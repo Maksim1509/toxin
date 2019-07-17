@@ -1,0 +1,21 @@
+mixin pie-chart
+    svg(width='120', height='121', viewBox = " 0 0 120 121 ")
+            linearGradient(id='gold', x1='50%', y1='0', x2='50%', y2='100%')
+                stop(offset='0%', stop-color='#FFE39C')
+                stop(offset='100%', stop-color='#FFBA9C')
+            linearGradient(id='blue', x1='50%', y1='0', x2='50%', y2='100%')
+                stop(offset='0%', stop-color='#BC9CFF')
+                stop(offset='100%', stop-color='#8BA4F9')
+            linearGradient(id='green', x1='50%', y1='90%', x2='50%', y2='100%')
+                stop(offset='0%', stop-color='#6FCF97')
+                stop(offset='100%', stop-color='#66D2EA')
+            ellipse(cx='60', cy='60.5' rx='60', ry='60.5', fill='#FFFFFF')
+            ellipse(cx='60', cy='60.5' rx='58', ry='58.5', fill='transparent',
+                    stroke='url(#gold)', stroke-width='4', stroke-dasharray='181 180', stroke-dashoffset='-94')
+            ellipse(cx='60', cy='60.5' rx='55', ry='55.5', fill='transparent',
+                    stroke='url(#blue)', stroke-width='10', stroke-dasharray='90 270', stroke-dashoffset='97' )
+            ellipse(cx='60', cy='60.5' rx='58', ry='58.5', fill='transparent',
+                    stroke='url(#green)', stroke-width='4', stroke-dasharray='90 274', stroke-dashoffset='-2')
+            text(x='35%' y='50%').pie_chart
+                tspan.pie_chart__count 260
+                tspan(x='30%' y='60%') голосов
