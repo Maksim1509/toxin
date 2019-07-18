@@ -16,7 +16,7 @@ mixin card-reg
             .card-reg__password
                 +form('card-reg-password', 'Пароль')
         .card-reg__toggle
-            +toggle
+            +toggle('card-reg-toggle')
         .card-reg__btn-to-pay
             +button('перейти к оплате', 1, 'https://pay.google.com').button.button--forward
         .card-reg__foot

@@ -9,75 +9,72 @@ html(lang="en")
         link(rel="stylesheet", href="../../node_modules/slick-carousel/slick/slick.css")
         script(src="../../node_modules/air-datepicker/dist/js/datepicker.min.js")
         title TOXIN
-    body
-        main
-            .left
-                +form('Email', 'text field')
-                +form-date('date field')
-                +date-dropdown('date dropdown', 'date dropdown')
-                +date-filter
-                +form-subscrip('subscription text field')
-                +rooms-filter
-                +checkbox-list('expandable checkbox list', 'Завтрак',
-                 "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
-                +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
+    body.ui-kit
+        .left
+            +form('Email', 'text field')
+            +form-date('date field')
+            +date-dropdown('date dropdown', 'date dropdown')
+            +date-filter
+            +form-subscrip('subscription text field')
+            +rooms-filter
+            +checkbox-list('expandable checkbox list', 'Завтрак',
+                "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
+            +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
                 {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})
-                +card-find-rooms({title: 'Найдём номера под ваши пожелания'})
-                +card-reg
-            .center
-                div
-                    +checkbox-button('checkbox-buttons','Можно курить',
+            +card-find-rooms({title: 'Найдём номера под ваши пожелания'})
+            +card-reg
+        .center
+            div
+                +checkbox-button('checkbox-buttons','Можно курить',
                     'Можно с питомцами',
                     'Можно пригласить гостей (до 10 человек)')
-                div
-                    +radio-btn('male', 'female', 'radio buttons')
-                div
-                    +toggle('toggle')
-                div
-                    +like-btn('like-btn', 'like buttnon')
-                div
-                    +rate-btn
-                div
-                    +dropdown('dropdown')
-                div
-                    +input-chbox('TEST')
-                div
-                    +title('test')
-                div
-                    +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор',
+            div
+                +radio-btn('male', 'female', 'radio buttons')
+            div
+                +toggle('toggle-ui', 'toggle')
+            div
+                +like-btn('like-btn', 'like buttnon')
+            div
+                +rate-btn
+            div
+                +dropdown('dropdown')
+            div
+                   +input-chbox('TEST')
+            div
+                +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор',
                      discription: 'Ширина коридоров в номере не менее 91 см.'},
                     {main: 'Помощник для инвалидов',
                      discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
-                div
-                    +card-room-order({number: '№ 888', type: 'люкс', price: '9 990₽'})
-                    +card-login
-            .right
-                div
-                    +range-slider
-                div Buttons
-                    div
-                        +button('click me')(class="button")
-                        +button('click me')(class="button button--empty")
-                    div
-                        +link-icon('click me').link-icon
-                        +link-icon('click me').link-icon.link-icon--grey
-                    div
-                        +button('перейти к оплате', 1).button.button--forward
-                    div
-                        +pagination
-                    div
-                        +bullet('bullet list', 'Нельзя с питомцами',
-                         'Без вечеринок и мероприятия',
-                          'Время прибытия — после 13:00, а выезд до 12:00')
             div
-                +feedback({id: 'feedback__like-btn', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
-                 text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+                +card-room-order({number: '№ 888', type: 'люкс', price: '9 990₽'})
+                +card-login
+        .right
+            div
+                +range-slider
+            div Buttons
                 div
-                    +card-room({number: '№ 888', type: 'люкс', price: '9 990₽',rating: 5, fb: 145})
-                    +card-room({number: '№ 840', type: '', price: '9 990₽',rating: 4, fb: 65})
-            +header(menu_ui, buttons_ui)
-            +header(menu_ui, buttons_ui, 'Cosmin Negoita')
-            +footer(footer_items_ui)
-            +footer-creative('Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.')
+                    +button('click me')(class="button")
+                    +button('click me')(class="button button--empty")
+                div
+                    +link-icon('click me').link-icon
+                    +link-icon('click me').link-icon.link-icon--grey
+                div
+                    +button('перейти к оплате', 1).button.button--forward
+                div
+                    +pagination
+                div
+                    +bullet('bullet list', 'Нельзя с питомцами',
+                        'Без вечеринок и мероприятия',
+                        'Время прибытия — после 13:00, а выезд до 12:00')
+        div
+            +feedback({id: 'feedback__like-btn', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
+                text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+            div
+                +card-room(rooms_data1)
+                +card-room(rooms_data2)
+        +header(menu_ui, buttons_ui)
+        +header(menu_ui, buttons_ui, 'Cosmin Negoita')
+        +footer(footer_items_ui)
+        +footer-creative('Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.')
         script(src="../js/index.js")
                

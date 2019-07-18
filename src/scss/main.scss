@@ -1,9 +1,5 @@
 @import './import.scss';
 
-html {
-    background: #E5E5E5;
-}
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -11,15 +7,15 @@ body {
     max-width: 1440px;
     width: 100%;
 }
-main {
-    width: 100%;
+.ui-kit {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    .left, .center, .right {
+    background-color: #ffffff;
+}
+.left, .center, .right {
         min-width: 380px;
         max-width: 33%;
-    }
-    flex-wrap: wrap;
 }
  
 

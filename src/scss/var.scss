@@ -14,7 +14,7 @@ $fsz--h3:   12px;
 /*FAMILIES*/
 $montserrat: 'Montserrat', sans-serif;
 $montserrat--bold: 'Montserrat Bold', sans-serif;
-$quicksand: 'Quicksand', sans-serif;
+$quicksand: 'Quicksand', 'OpenSans', sans-serif;
 /*MIXINS*/
 @mixin text-body {
     font-family: $montserrat;
