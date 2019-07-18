@@ -18,7 +18,7 @@ mixin card-reg
         .card-reg__toggle
             +toggle
         .card-reg__btn-to-pay
-            +button('перейти к оплате', 1).button.button--forward
+            +button('перейти к оплате', 1, 'https://pay.google.com').button.button--forward
         .card-reg__foot
-            +card-foot('Уже есть аккаунт на Toxin', 'Войти')
+            +card-foot('Уже есть аккаунт на Toxin', 'Войти', './sign-in-page')
         
