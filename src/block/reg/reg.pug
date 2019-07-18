@@ -1,0 +1,17 @@
+mixin reg(reg)
+    if (reg)   
+        .reg
+            .reg__header
+                +header(menu_page, buttons_page)
+            .reg__card
+                +card-reg
+            .reg__footer
+                +footer(footer_items_page)
+    else
+        .reg
+            .reg__header
+                +header(menu_page, buttons_page)
+            .reg__card
+                +card-login
+            .reg__footer
+                +footer(footer_items_page)

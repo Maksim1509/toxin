@@ -1,10 +1,10 @@
 mixin button(name, forward)
     if forward
-        form(action="/")
+        form(action=".")
             button(class!=attributes.class)= name
                 .button__arrow
                     i.material-icons arrow_forward
     else
-        form(action="")
+        form(action=".")
             button(class!=attributes.class)
                 span.button__text= name
