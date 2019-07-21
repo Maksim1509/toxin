@@ -1,0 +1,33 @@
+mixin form-elems
+    header.form-elems__header
+        +logo('ui')
+    main.form-elems
+        .form-elems__left
+            .form-elems__form
+                +form('text-field-ui', 'Email', 'text field')
+            .form-elems__form-hover
+                +form('text-field-ui-hover', 'This is pretty awesome', 'text field')
+            .form-elems__dropdown
+                +dropdown('dropdown')
+            .form-elems__date
+                +form-date('form-date-ui', 'masked text field')
+            .form-elems__date-dropdown
+                 +date-dropdown('date dropdown', 'date dropdown')
+            .form-elems__filter-date-dropdown
+                +date-filter('filter date dropdown')
+            .form-elems__subscrip
+                +form-subscrip('subscription text field')
+            .form-elems__room-filter
+                +rooms-filter('dropdown')
+            .form-elems__room-filter--show
+                +rooms-filter('dropdown')
+            .form-elems__checkbox-list
+                +checkbox-list('expandable checkbox list', 'Завтрак',
+                    "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
+            .form-elems__checkbox-list-show
+                +checkbox-list('expandable checkbox list', 'Завтрак',
+                    'Письменный стол', 'Стул для кормления', 'Кроватка',
+                    'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
+            .form-elems__room__info
+                +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
+                    {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})

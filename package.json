@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/pug/landing-page.pug --open",
+    "start-forms": "parcel src/pug/form-elems-page.pug --open",
     "start-colors": "parcel src/pug/colors-type-page.pug --open",
     "start-search": "parcel src/pug/search-room-page.pug --open",
     "start-rd": "parcel src/pug/room-detail-page.pug --open",
