@@ -11,7 +11,7 @@
     "start-reg": "parcel src/pug/reg-page.pug --open",
     "start-sign": "parcel src/pug/sign-in-page.pug --open",
     "start-ui": "parcel src/pug/index.pug --open",
-    "build": "parcel build src/pug/sign-in-page.pug src/pug/reg-page.pug src/pug/index.pug src/pug/room-detail-page.pug src/pug/search-room-page.pug src/pug/landing-page.pug  -d docs --public-url ./"
+    "build": "parcel build src/pug/colors-type-page.pug src/pug/sign-in-page.pug src/pug/reg-page.pug src/pug/index.pug src/pug/room-detail-page.pug src/pug/search-room-page.pug src/pug/landing-page.pug  -d docs --public-url ./"
   },
   "keywords": [],
   "author": "",
