@@ -1,0 +1,104 @@
+.colors-type__header {
+    background: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.colors-type {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    padding: 67px 191px 145px 150px;
+}
+
+.color {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.color__exam {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+}
+
+.color__title {
+    padding: 0;
+    margin: 0;
+    font-family: $quicksand;
+    font-size: 19px;
+    line-height: 29px;
+}
+.color__name {
+    font-family: $quicksand-reg;
+}
+
+.color__exam--dark-shade-100 {
+    background: $dark-shade--100;
+}
+.color__exam--dark-shade-75 {
+    background: $dark-shade--75;
+}
+.color__exam--dark-shade-50 {
+    background: $dark-shade--50;
+}
+.color__exam--dark-shade-25 {
+    background: $dark-shade--25;
+}
+.color__exam--dark-shade-5 {
+    background: $dark-shade--5;
+}
+.color__exam--purple {
+    background: $purple;
+}
+.color__exam--green {
+    background: $green;
+}
+
+.type {
+    display: flex;
+    margin-bottom: 50px;
+}
+.type__name {
+    font-family: $montserrat;
+    color: $dark-shade--25;
+    width: 37px;
+    text-align: right;
+    margin-right: 30px;
+}
+.type__exam {
+    width: 336px;
+}
+
+.type__name--h1 {
+    font-size: 24px;
+    line-height: 29px;
+}
+.type__exam--h1 {
+    @include text-h1;
+}
+
+.type__name--h2 {
+    font-size: 19px;
+    line-height: 23px;
+}
+.type__exam--h2 {
+    @include text-h2;
+}
+
+.type__name--h3 {
+    font-size: 12px;
+    line-height: 15px;
+}
+.type__exam--h3 {
+    @include text-h3;
+}
+
+.type__name--body {
+    font-size: 14px;
+    line-height: 24px;
+}
+.type__exam--body {
+    @include text-body;
+}

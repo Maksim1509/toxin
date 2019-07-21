@@ -1,0 +1,33 @@
+mixin color(mod, title, name)
+    .color
+        .color__exam(class=mod)
+        .color__discr
+            h3.color__title= title
+            span.color__name= name
+
+mixin type(mod_name, mod_exam, name, exam)
+    .type
+        .type__name(class=mod_name)= name
+        .type__exam(class=mod_exam)= exam
+        
+mixin colors-type
+    header.colors-type__header
+        +logo('ui')
+    main.colors-type
+        .colors-type__colors
+            +color('color__exam--dark-shade-100', 'Dark-shade-100', '#1F2041')
+            +color('color__exam--dark-shade-75', 'Dark-shade-75', '#1F2041')
+            +color('color__exam--dark-shade-50', 'Dark-shade-50', '#1F2041')
+            +color('color__exam--dark-shade-25', 'Dark-shade-25', '#1F2041')
+            +color('color__exam--dark-shade-5', 'Dark-shade-5', '#1F2041')
+            +color('color__exam--purple', 'Purple', '#BC9CFF')
+            +color('color__exam--green', 'Green', '#6FCF97')
+        .colors-type__type
+            +type('type__name--h1', 'type__exam--h1', 'H1',
+                'This one is the sub-section or widget title')
+            +type('type__name--h2', 'type__exam--h2', 'H2',
+                'Next one is the item title inside widgets')
+            +type('type__name--h3', 'type__exam--h3', 'H3', 
+                'This is a label or CTA text')
+            +type('type__name--body', 'type__exam--body',
+                'Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
