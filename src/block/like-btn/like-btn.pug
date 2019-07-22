@@ -1,7 +1,5 @@
-mixin like-btn(id, title)
+mixin like-btn(id)
     .like-btn
-        .like-btn__title
-            +title(title)
         form(action="/")
             input(type="checkbox", name=id id=id value="like").like-btn__input
             label(for=id).like-btn__wrap

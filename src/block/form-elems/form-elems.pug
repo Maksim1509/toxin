@@ -31,3 +31,51 @@ mixin form-elems
             .form-elems__room__info
                 +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
                     {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})
+        .form-elems__center
+            .form-elems__chbox
+                +checkbox-button('checkbox-buttons','Можно курить',
+                    'Можно с питомцами',
+                    'Можно пригласить гостей (до 10 человек)')
+            .form-elems__radio-btn
+                .form-elems__title radio buttons
+                +radio-btn('male', 'female', 'radio buttons')
+            .form-elems__toggle
+                .form-elems__title toggle
+                .form-elems__toggle-wrap
+                    +toggle('toggle-ui1', 'toggle')
+                +toggle('toggle-ui2')
+            .form-elems__like-btn
+                .form-elems__title like button
+                .form-elems__like-btn-wrap
+                    +like-btn('like-btn1')
+                    +like-btn('like-btn2')
+            .form-elems__rate 
+                .form-elems__title rate button
+                .form-elems__rate-wrap
+                    +rate(4)
+                    +rate(5)
+            .form-elems__dropdown-center
+                +dropdown('dropdown')
+            .form-elems__rich-chbox
+                +rich-chbox('rich Checkbox Buttons', {main: 'Широкий коридор',
+                     discription: 'Ширина коридоров в номере не менее 91 см.'},
+                    {main: 'Помощник для инвалидов',
+                     discription: 'На 1 этаже вас встретит специалист  и проводит до номера.'})
+        .form-elems__right
+            .form-elems__range-slider
+                +range-slider('Range Slider')
+            .form-elems__btns
+                .form-elems__title buttons
+                .form-elems__btn                  
+                    +button('click me')(class="button")                    
+                    +button('click me')(class="button")
+                    +button('click me')(class="button button--empty")
+                    +button('click me')(class="button button--empty")
+                .form-elems__btn-link
+                    +link-icon('click me').link-icon
+                    +link-icon('click me').link-icon.link-icon--grey
+                .form-elems__btn-forward
+                    +button('перейти к оплате', 1).button.button--forward
+            .form-elems__pagination
+                .form-elems__title pagination
+                +pagination

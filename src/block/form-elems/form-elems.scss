@@ -4,12 +4,19 @@
     padding-left: 30px;
 }
 .form-elems {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     box-sizing: border-box;
     background-color: #FFFFFF;
     padding: 62px 141px 132px;
+    @media(max-width: 800px) {
+        padding: 5px;
+    }
 }
 .form-elems__left {
     max-width: 320px;
+    margin-right: 10px;
 }
 .form-elems__form-hover {
     margin: 20px 0;
@@ -57,3 +64,60 @@
 .form-elems__room__info {
     margin-top: 40px;
 }
+.form-elems__center {
+    width: 320px;
+    margin-right: 10px;   
+}
+.form-elems__radio-btn {
+    margin: 40.88px 0 36.56px;
+}
+.form-elems__toggle-wrap {
+    margin-bottom: 10px;
+}
+.form-elems__like-btn {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-elems__title {
+    font-family: $montserrat--bold;
+    font-size: $fsz--h3;
+    text-transform: uppercase;
+    color: $dark-shade--100;
+    margin-bottom: 16px;
+}
+.form-elems__like-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 89.72px;
+}
+.form-elems__rate-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+.form-elems__dropdown-center {
+    margin: 196px 0 257px;
+}
+.form-elems__btns {
+    display: flex;
+    flex-direction: column;
+    margin: 40.56px 0 40px;
+}
+.form-elems__btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    width: 218px;
+    height: 164px;
+}
+.form-elems__btn-link {
+    display: flex;
+    justify-content: space-between;
+    width: 142px;
+    margin-bottom: 30px;
+}
+
+

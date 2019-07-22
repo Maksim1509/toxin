@@ -6,3 +6,4 @@ import '../form-filter-dropdown/form-filter-dropdown';
 import '../rooms-filter/rooms-filter';
 import '../checkbox-list/checkbox-list';
 import '../checkbox-button/input-chbox/input-chbox';
+import '../range-slider/range-slider';

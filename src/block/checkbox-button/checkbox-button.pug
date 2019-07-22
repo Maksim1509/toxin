@@ -1,5 +1,6 @@
 mixin checkbox-button(title, ...contents)
     .checkbox-button
-        +title(title)
+        .checkbox-button__title
+            +title(title)
         each content in contents
             +input-chbox(content)

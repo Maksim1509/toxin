@@ -1,6 +1,5 @@
-mixin radio-btn(id_left, id_right, title)
+mixin radio-btn(id_left, id_right)
     .radio-btn
-        .checkbox-button__title= title
         form(action="/")
             input(type="radio", name="sex", value="male" id=id_left).radio-btn__input
             label(for=id_left).radio-btn__text Мужчина
