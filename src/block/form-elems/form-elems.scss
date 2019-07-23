@@ -32,35 +32,11 @@
     margin: 100px 0 20px;
 }
 
-.form-elems__room-filter--show {
-    .rooms-filter__body {
-        display: block;
-    }
-}
 .form-elems__checkbox-list {
     margin-top: 173px;
     margin-bottom: 20px;
 }
 
-.form-elems__checkbox-list-show {
-    .checkbox-list__content {
-        display: flex;
-    }
-    .checkbox-list__icon {
-        position: relative;
-    }
-    .checkbox-list__icon::after {
-        position: absolute;
-        content: 'expand_less';
-        background: #FFFFFF;
-    }
-    .checkbox-list__content:nth-child(3) .input-chbox__button,
-    .checkbox-list__content:nth-child(4) .input-chbox__button,
-    .checkbox-list__content:nth-child(5) .input-chbox__button {
-        border-color: $purple;
-        background: url('../block/input-chbox/icon/Vector.svg') no-repeat center center;
-    }
-}
 .form-elems__room__info {
     margin-top: 40px;
 }
@@ -119,5 +95,6 @@
     width: 142px;
     margin-bottom: 30px;
 }
-
-
+.form-elems__dropdown-right {
+    margin: 197px 0 257px;
+}

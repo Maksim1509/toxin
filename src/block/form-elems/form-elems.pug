@@ -19,12 +19,7 @@ mixin form-elems
                 +form-subscrip('subscription text field')
             .form-elems__room-filter
                 +rooms-filter('dropdown')
-            .form-elems__room-filter--show
-                +rooms-filter('dropdown')
             .form-elems__checkbox-list
-                +checkbox-list('expandable checkbox list', 'Завтрак',
-                    "Письменный стол", "Кроватка", "Телевизор", "Шампунь")
-            .form-elems__checkbox-list-show
                 +checkbox-list('expandable checkbox list', 'Завтрак',
                     'Письменный стол', 'Стул для кормления', 'Кроватка',
                     'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
@@ -79,3 +74,9 @@ mixin form-elems
             .form-elems__pagination
                 .form-elems__title pagination
                 +pagination
+            .form-elems__dropdown-right
+                +dropdown('dropdown')
+            .form-elems__bullet
+                +bullet('bullet list', 'Нельзя с питомцами',
+                        'Без вечеринок и мероприятия',
+                        'Время прибытия — после 13:00, а выезд до 12:00')
