@@ -1,0 +1,29 @@
+.form-elems__btns {
+    display: flex;
+    flex-direction: column;
+    margin: 40.56px 0 40px;
+}
+.form-elems__btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    width: 218px;
+    height: 164px;
+}
+.form-elems__btn-link {
+    display: flex;
+    justify-content: space-between;
+    width: 142px;
+    margin-bottom: 30px;
+}
+.form-elems__dropdown-right {
+    margin: 197px 0 257px;
+}
+.form-elems__room__info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

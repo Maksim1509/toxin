@@ -7,3 +7,4 @@ import '../rooms-filter/rooms-filter';
 import '../checkbox-list/checkbox-list';
 import '../checkbox-button/input-chbox/input-chbox';
 import '../range-slider/range-slider';
+import '../like-btn/like-btn';
