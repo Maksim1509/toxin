@@ -1,0 +1,21 @@
+.cards__header {
+    background-color: #E5E5E5;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 140px 140px;
+}
+
+.cards__find-rooms {
+    margin-bottom: 40px;
+}
+
+.cards__room-order {
+    margin-bottom: 40px;
+}
+.cards__room:first-child {
+    margin-bottom: 40px;
+}

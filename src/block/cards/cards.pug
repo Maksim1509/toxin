@@ -1,0 +1,21 @@
+mixin cards
+    header.cards__header
+        +logo('ui')
+    main.cards
+        .cards__left
+            .cards__find-rooms
+                +card-find-rooms({title: 'Найдём номера под ваши пожелания'})
+            .card__reg
+                +card-reg
+        .cards__center
+            .cards__room-order
+                +card-room-order({number: '№ 888', type: 'люкс', price: '9 990₽'})
+            .cards__login
+                +card-login
+        .cards__left
+            .cards__room
+                +card-room(rooms_data1)
+            .cards__room
+                +card-room(rooms_data2)
+
+

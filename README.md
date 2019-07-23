@@ -2,6 +2,8 @@
 
 <h3><a href='https://maksim1509.github.io/toxin/form-elems-page'>Form elements</a></h3>
 
+<h3><a href='https://maksim1509.github.io/toxin/cards-page'>Cards</a></h3>
+
 <h3><a href='https://maksim1509.github.io/toxin/landing-page'>Landing page</a></h3>
 
 <h3><a href='https://maksim1509.github.io/toxin/search-room-page'>Search room</a></h3>
