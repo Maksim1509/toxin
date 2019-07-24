@@ -1,0 +1,12 @@
+mixin headers-footers
+    header.headers-footers__header
+        +logo('ui')
+    main.headers-footers
+        .headers-footers__standart
+            +header(menu_ui, buttons_ui)
+        .headers-footers__logged
+            +header(menu_ui, buttons_ui, 'Cosmin Negoita')
+        .headers-footers__footer
+            +footer(footer_items_ui)
+        .headers-footers__footer-creative
+            +footer-creative('Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.')

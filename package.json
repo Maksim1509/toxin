@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/pug/landing-page.pug --open",
+    "start-hf": "parcel src/pug/headers-footers-page.pug --open",
     "start-cards": "parcel src/pug/cards-page.pug --open",
     "start-forms": "parcel src/pug/form-elems-page.pug --open",
     "start-colors": "parcel src/pug/colors-type-page.pug --open",
@@ -13,7 +14,7 @@
     "start-reg": "parcel src/pug/reg-page.pug --open",
     "start-sign": "parcel src/pug/sign-in-page.pug --open",
     "start-ui": "parcel src/pug/index.pug --open",
-    "build": "parcel build src/pug/cards-page.pug src/pug/form-elems-page.pug src/pug/colors-type-page.pug src/pug/sign-in-page.pug src/pug/reg-page.pug src/pug/index.pug src/pug/room-detail-page.pug src/pug/search-room-page.pug src/pug/landing-page.pug  -d docs --public-url ./"
+    "build": "parcel build src/pug/headers-footers-page.pug src/pug/cards-page.pug src/pug/form-elems-page.pug src/pug/colors-type-page.pug src/pug/sign-in-page.pug src/pug/reg-page.pug src/pug/index.pug src/pug/room-detail-page.pug src/pug/search-room-page.pug src/pug/landing-page.pug  -d docs --public-url ./"
   },
   "keywords": [],
   "author": "",
