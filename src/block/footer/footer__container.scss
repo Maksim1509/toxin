@@ -1,6 +1,7 @@
 .footer__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__logo-coll {

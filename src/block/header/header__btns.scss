@@ -1,13 +1,14 @@
 .header__btns {
     display: flex;
-    min-width: 200px;
     justify-content: space-between;
-    
 }
 
 .header__btn {
     position: relative;
     z-index: 1000;
+    button {
+        height: 34px;
+    }
 }
 .header__btn:first-child {
     margin-right: 20px;

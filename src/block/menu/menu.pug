@@ -1,7 +1,8 @@
 mixin menu(items)
-    nav
+    nav.menu__wrap
         ul.menu
             each item in items
-                li.menu__li
+                li.menu__li(class=item.mod)
                     a(href="/").menu__item= item.name
                         i.material-icons.menu__item-icon= item.icon
+    i.menu-icon.material-icons menu

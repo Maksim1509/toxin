@@ -2,8 +2,18 @@
 @import './menu--active.scss';
 
 .menu {
+    box-sizing: border-box;
+    display: flex;    
+    justify-content: space-between;
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+.menu__wrap {
+    width: 100%;
+    @media screen and (max-width: 920px) {
+        display: none;
+    }
 }

@@ -9,13 +9,13 @@
     background: $bcgColor;
     transition: 0.3s;
     cursor: pointer;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .button {
     @include button(white, none, 
     linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%));
+    font-family: 'Montserrat SemiBold';
     &:hover {
         opacity: 0.5;
     }
