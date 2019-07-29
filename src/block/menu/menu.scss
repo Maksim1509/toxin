@@ -17,3 +17,13 @@
         display: none;
     }
 }
+
+.menu__wrap--show {
+    display: block;
+}
+.menu--mobile {
+    a {color: $dark-shade--100;
+    margin-bottom: 10px;}
+    flex-direction: column;
+    
+}

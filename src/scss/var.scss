@@ -49,4 +49,7 @@ $quicksand-reg: 'Quicksand-reg', 'OpenSans', sans-serif;
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @media screen and (max-width: 400px) {
+        width: 90%;
+    }
 }
