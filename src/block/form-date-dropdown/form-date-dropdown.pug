@@ -1,6 +1,6 @@
 mixin date-dropdown(title_left, title_rigth)
     form.form.form-date-dropdown__container
         label.form__title.form-date-dropdown__left= title_left
-            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field.form-date-dropdown
+            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ", readonly).form__field.form-date-dropdown
         label.form__title.form-date-dropdown__right= title_rigth
-            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field.form-date-dropdown
+            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ", readonly).form__field.form-date-dropdown

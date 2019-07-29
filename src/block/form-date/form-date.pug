@@ -1,4 +1,4 @@
 mixin form-date(id, title)
     form.form(action="/")
         label.form__title= title
-        input(type="text", name="date" placeholder="ДД.ММ.ГГГГ" id=id).form__field.form-date
+        input(type="text", name="date" placeholder="ДД.ММ.ГГГГ" id=id, readonly).form__field.form-date
