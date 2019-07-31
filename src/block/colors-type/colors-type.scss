@@ -7,8 +7,9 @@
 .colors-type {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background: #FFFFFF;
-    padding: 67px 191px 145px 150px;
+    padding: 64px 191px 145px 150px;
 }
 
 .color {
@@ -18,6 +19,7 @@
 }
 .color__exam {
     width: 70px;
+    min-width: 70px;
     height: 70px;
     border-radius: 6px;
     margin-right: 40px;
@@ -32,6 +34,8 @@
 }
 .color__name {
     font-family: $quicksand-reg;
+    font-size: 19px;
+    line-height: 29px;
 }
 
 .color__exam--dark-shade-100 {
@@ -68,7 +72,7 @@
     margin-right: 30px;
 }
 .type__exam {
-    width: 336px;
+    max-width: 336px;
 }
 
 .type__name--h1 {
@@ -93,6 +97,7 @@
 }
 .type__exam--h3 {
     @include text-h3;
+    text-transform: uppercase;
 }
 
 .type__name--body {
@@ -101,5 +106,5 @@
 }
 .type__exam--body {
     @include text-body;
-    width: 301px;
+    max-width: 301px;
 }

@@ -1,16 +1,22 @@
+.form-elems__right {
+    min-width: 320px;
+}
+
 .form-elems__btns {
     display: flex;
     flex-direction: column;
-    margin: 40.56px 0 40px;
+    margin: 25px 0 40px;
 }
 .form-elems__btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
     position: relative;
     z-index: 1;
     width: 218px;
-    height: 164px;
+    height: 118px;
+    margin-bottom: 31px;
 }
 .form-elems__btn-link {
     display: flex;
@@ -19,9 +25,9 @@
     margin-bottom: 30px;
 }
 .form-elems__dropdown-right {
-    margin: 197px 0 257px;
+    margin: 230px 0 257px;
 }
-.form-elems__room__info {
+.form-elems__room-info {
     display: flex;
     width: 100%;
     justify-content: space-between;
