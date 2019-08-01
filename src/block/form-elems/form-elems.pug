@@ -80,5 +80,6 @@ mixin form-elems
         .form-elems__room-info
                 +room-info({icon: 'insert_emoticon', title: 'Комфорт', discrip: 'Шумопоглощающие стены'}, 
                     {icon: 'location_city', title: 'Удобство', discrip: 'Окно в каждой из спален'})
-                +feedback({id: 'feedback__like-btn', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
-                text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+                .form-elems__feedback
+                    +feedback({id: 'feedback__like-btn', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
+                    text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})

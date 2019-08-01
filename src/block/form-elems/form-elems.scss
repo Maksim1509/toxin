@@ -8,13 +8,15 @@
     padding-left: 30px;
 }
 .form-elems {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     box-sizing: border-box;
     background-color: #FFFFFF;
-    padding: 62px 141px 132px;
-    @media(max-width: 800px) {
+    padding: 62px 9.792% 132px;
+    @media(max-width: 810px) {
+        flex-direction: column;
         padding: 5px;
     }
 }

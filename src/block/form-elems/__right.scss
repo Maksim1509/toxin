@@ -1,11 +1,15 @@
 .form-elems__right {
-    min-width: 320px;
+    max-width: 320px;
 }
 
 .form-elems__btns {
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     margin: 25px 0 40px;
+    @media screen and(max-width: 1400px) {
+        min-width: 305px;
+    }
 }
 .form-elems__btn {
     display: flex;
@@ -32,4 +36,8 @@
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+.form-elems__feedback {
+    margin-top: 10px;
 }

@@ -1,6 +1,9 @@
 .form-elems__center {
-    width: 320px;
-    margin-right: 72px;   
+    max-width: 320px;
+    margin-right: 6.218%;
+    @media(max-width: 720px) {
+        margin: 0;
+    }
 }
 .form-elems__radio-btn {
     margin: 40.88px 0 36.56px;
@@ -32,4 +35,8 @@
 }
 .form-elems__dropdown-center {
     margin: 196px 0 257px;
+    width: 320px;
+    @media screen and(max-width: 1400px) {
+        width: 100%;
+    }
 }

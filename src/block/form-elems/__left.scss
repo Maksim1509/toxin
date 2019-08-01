@@ -1,6 +1,12 @@
 .form-elems__left {
     max-width: 320px;
-    margin-right: 126px;
+    margin-right: 10.882%;
+    @media(max-width: 886px) {
+        margin-right: 20px;
+    }
+    @media(max-width: 720px) {
+        margin: 0;
+    }
 }
 .form-elems__form-hover {
     margin: 20px 0;
