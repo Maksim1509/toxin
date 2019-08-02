@@ -13,8 +13,10 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 0 140px;
-
     @media screen and (max-width: 1120px) {
         padding: 0 40px;
+    }
+    @media screen and (max-width: 380px) {
+        padding: 0 5px;
     }
 }
