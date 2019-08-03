@@ -1,4 +1,12 @@
 .card-room-order__price-list-item {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-room-order__price-list-item:nth-child(3) {
+    line-height: 18px;
+    .card-room-order-right-col {
+        line-height: 24px;
+    }
 }

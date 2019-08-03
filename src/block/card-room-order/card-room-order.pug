@@ -2,11 +2,13 @@ include ./__icon/card-room-order__icon
 mixin card-room-order(info)
     section.card-room-order
         .card-room-order__title
-            span.card-room-order__number= info.number
-            span.card-room-order__type= info.type
-            span.card-room-order__price
-                strong.card-room-order__price-item= info.price
-                |  в сутки
+            .card-room-number
+                font.card-room-order__num= info.number.slice(0, 2)
+                font.card-room-order__number= info.number.slice(2)
+                font.card-room-order__type= info.type
+            .card-room-price
+                font.card-room-order__price= info.price 
+                font.card-room-order__price-item  в сутки
         .card-room-order__date-dropdown
             +date-dropdown('прибытие', 'выезд')
         .card-room-order__dropdown

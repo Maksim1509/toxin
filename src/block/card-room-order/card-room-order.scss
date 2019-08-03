@@ -15,3 +15,10 @@
 .card-room-order {
     @include card;
 }
+
+.card-room-order__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -5px;
+}

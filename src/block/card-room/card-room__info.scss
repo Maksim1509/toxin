@@ -1,18 +1,25 @@
 .card-room__info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: 12px;
     margin-top: 20px;
     width: 233px;
 }
-
-.card-room__number {
+.card-room__n {
     font-family: $quicksand;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
+    color: $dark-shade--100;
+}
+.card-room__number {
+    font-family: $quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
     color: $dark-shade--100;
     margin-right: 5px;
     

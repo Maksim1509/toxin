@@ -10,11 +10,12 @@ mixin card-room(info)
             .card-room__photo
                 img(src=info.img4, alt="photo").card-room__img
         .card-room__info
-            span.card-room__number= info.number
-            span.card-room__type= info.type
-            span.card-room__price
-                strong.card-room__price-item= info.price
-                |  в сутки
+            font.card-room__n= info.number.slice(0, 2)
+            font.card-room__number= info.number.slice(2)
+            font.card-room__type= info.type
+            .card-room__price
+                font.card-room__price-item= info.price
+                font в сутки
         .card-room__line
         .card-room__rate-btn
             +rate(info.rating)

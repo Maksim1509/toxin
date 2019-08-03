@@ -5,3 +5,7 @@
 .card-find-rooms {
     @include card;
 }
+
+.card-find-rooms__title {
+    margin-top: -5px;
+}

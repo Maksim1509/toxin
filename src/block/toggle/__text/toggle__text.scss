@@ -9,6 +9,7 @@
         box-sizing: border-box;
         position: absolute;
         left: 0;
+        top: 0px;
         width: 40px;
         height: 20px;
         border: 1px solid $dark-shade--25;
@@ -18,6 +19,7 @@
     &:after {
         content: '';
         position: absolute;
+        top: 4px;
         width: 12px;
         height: 12px;
         left: 5px;

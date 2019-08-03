@@ -1,5 +1,5 @@
 .button--empty {
-    max-width: 99px;
+    width: 99px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,7 @@
         }
     }
     &::before {
+        box-sizing: border-box;
         content: '';
         position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;

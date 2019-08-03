@@ -5,10 +5,18 @@
 }
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 72px 140px 140px;
 }
-
+.cards__left {
+    margin-right: 40px;
+}
+.cards__center {
+    margin-right: 40px;
+}
+.cards__right {
+    margin-top: 409px;
+}
 .cards__find-rooms {
     margin-bottom: 40px;
 }
