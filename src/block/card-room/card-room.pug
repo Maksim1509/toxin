@@ -10,15 +10,16 @@ mixin card-room(info)
             .card-room__photo
                 img(src=info.img4, alt="photo").card-room__img
         .card-room__info
-            font.card-room__n= info.number.slice(0, 2)
-            font.card-room__number= info.number.slice(2)
-            font.card-room__type= info.type
+            .card-room__info-num
+                font.card-room__n= info.number.slice(0, 2)
+                font.card-room__number= info.number.slice(2)
+                font.card-room__type= info.type
             .card-room__price
                 font.card-room__price-item= info.price
-                font в сутки
+                font  в сутки
         .card-room__line
         .card-room__rate-btn
             +rate(info.rating)
             .card-room__feedback
                 srtong.card-room__feedback-count= info.fb
-                |  отзывов
+                |  Отзывов

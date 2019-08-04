@@ -1,7 +1,9 @@
 .slick-arrow {
     position: absolute;
 }
-
+.slick-slide {
+    height: 151px;
+}
 .slick-prev{
     position: absolute;
     top: 35.5%;
@@ -41,12 +43,11 @@
     height: 7.49px;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     li {
         width: 7.5px;
-        margin-left: 3.75px;
     }
     button {
         position: absolute;
