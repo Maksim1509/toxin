@@ -34,12 +34,16 @@ mixin room-detail
                             li.room-detail__pie-chart-list-item
                                 .room-detail__pie-chart-list-dot4
                                 span.room-detail__pie-chart-list-text Разочарован
-                .room-detail__fb
-                    h3.room-detail__fb-title Отзывы посетителей номера
-                    +feedback({id: 'feedback__like-btn1', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
-                    text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
-                    +feedback({id: 'feedback__like-btn2', img: '../block/feedback/image/image4.png', name: 'Патрисия Стёклышкова', data: 'Неделю назад',
-                    text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+                section.room-detail__fb
+                    article.room-detail__fb-header
+                        h3.room-detail__fb-title Отзывы посетителей номера
+                        span.room-detail__fb-count 2 отзыва
+                    article.room-detail__fb-elem
+                        +feedback({id: 'feedback__like-btn1', img: '../block/feedback/image/autor3.png', name: 'Мурад Сарафанов', data: '5 дней назад',
+                        text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+                    article.room-detail__fb-elem-elem
+                        +feedback({id: 'feedback__like-btn2', img: '../block/feedback/image/image4.png', name: 'Патрисия Стёклышкова', data: 'Неделю назад',
+                        text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
                 .room-detail__condition    
                     .room-detail__rules
                         h3.room-detail__rules-title Правила
@@ -60,7 +64,7 @@ mixin room-detail
                         h3.room-detail__cancel-title Отмена
                         .room-detail__cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.            
             .room-detail__order
-                +card-room-order(rooms_data4)
+                +card-room-order(rooms_data1)
         .room-detail__footer
             +footer(footer_items_page)
 

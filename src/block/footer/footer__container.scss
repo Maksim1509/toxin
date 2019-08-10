@@ -14,7 +14,7 @@
 }
 .footer__text {
     @include text-body;
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .footer__menu {
@@ -40,6 +40,7 @@
         margin-top: 30px;
     }
     width: 260px;
+    margin-left: 2px;
 
 }
 .footer__menu-title {
@@ -53,7 +54,7 @@
     font-size: 14px;
     line-height: 17px;
     color: $dark-shade--50;
-    margin-top: 20px;
+    margin-top: 22px;
     @media screen and (max-width: 540px) {
         display: none;
     }
@@ -61,5 +62,6 @@
 
 .footer__subscrp-text {
     @extend .footer__text;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 18px;
 }

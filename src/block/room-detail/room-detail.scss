@@ -42,87 +42,104 @@
     width: 100%; 
     } 
     } 
-    .room-detail__img--small2 { 
+.room-detail__img--small2 {
+    margin-top: -1px;
     object-fit: cover; 
     width: 100%; 
     @media screen and(max-width: 1010px) { 
-    width: 50%; 
-    min-width: 230px; 
+        width: 50%; 
+        min-width: 230px; 
     } 
     @media screen and(max-width: 460px) { 
-    width: 100%; 
+        width: 100%; 
     } 
-    } 
+} 
     
-    .room-detail__main { 
-    padding: 70px 9.723%; 
+.room-detail__main { 
+    padding: 62px 9.723%; 
+    padding-top: 65px;
     display: flex; 
     justify-content: space-between; 
-    flex-wrap: wrap; 
-    border-bottom: 1px solid $dark-shade--25; 
+    flex-wrap: wrap;
+    border-bottom: 1px solid $dark-shade--25;
     @media screen and(max-width: 600px) { 
-    padding: 5px; 
+        padding: 5px; 
     } 
-    } 
-    .room-detail__order { 
+} 
+.room-detail__order {
+    margin-top: 5px;
     @media screen and(max-width: 1181px) { 
-    order: 1; 
+        order: 1; 
     } 
     @media screen and(max-width: 450px) { 
-    width: 100%; 
-    max-width: 310px; 
+        width: 100%; 
+        max-width: 310px; 
     } 
-    } 
-    .room-detail__info { 
+} 
+.room-detail__info { 
     display: flex; 
     flex-wrap: wrap; 
-    max-width: 60%; 
+    max-width: 61.294%; 
     @media screen and(max-width: 1181px) { 
-    order: 2; 
+        order: 2; 
     } 
+} 
     
-    } 
-    
-    .room-detail__params { 
-    margin-bottom: 30px; 
-    } 
-    .room-detail__params-title { 
+.room-detail__params { 
+    margin-bottom: 34px; 
+} 
+.room-detail__params-title { 
     padding: 0; 
     margin: 0; 
     @include text-h2; 
     margin-bottom: 20px; 
-    } 
+} 
+.room-detail__fb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.room-detail__fb-title { 
+    padding: 0; 
+    margin: 0; 
+    @include text-h2;  
+}
+.room-detail__fb-count {
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 14px;
+    color: $dark-shade--50;
+}
+.room-detail__fb-elem {
+    margin-bottom: 23px;
+}
     
-    .room-detail__fb-title { 
+.room-detail__rules-title { 
     padding: 0; 
     margin: 0; 
     @include text-h2; 
-    margin-bottom: 20px; 
-    } 
-    
-    .room-detail__rules-title { 
-    padding: 0; 
-    margin: 0; 
-    @include text-h2; 
-    margin-left: 29px; 
-    } 
-    .room-detail__rules-list { 
+    margin-left: 20px; 
+} 
+.room-detail__rules-list { 
     list-style: none; 
     padding: 0; 
     margin: 0; 
     margin-top: 20px; 
-    } 
-    .room-detail__rules-list-item { 
-    width: 271px; 
-    display: flex; 
+} 
+.room-detail__rules-list-item { 
+    width: 260px; 
+    display: flex;
+    margin-bottom: 9px; 
     align-items: baseline; 
-    } 
-    .room-detail__rules-dot-wrap { 
+} 
+.room-detail__rules-dot-wrap { 
     display: flex; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    } 
-    .room-detail__rules-dot { 
+} 
+.room-detail__rules-dot { 
     width: 10px; 
     height: 10px; 
     min-width: 10px; 
@@ -130,7 +147,7 @@
     background-color: $dark-shade--25; 
     border-radius: 50%; 
     margin-right: 10px; 
-    } 
+} 
     .room-detail__rules-span { 
     @include text-body; 
     display: inline-block; 
@@ -141,12 +158,13 @@
     display: flex; 
     justify-content: space-between; 
     flex-wrap: wrap; 
-    margin-top: 30px; 
+    margin-top: 31px; 
     width: 100%; 
     max-width: 682px; 
     } 
     .room-detail__cancel-title { 
-    margin: 0; 
+    margin: 0;
+    margin-left: 20px;
     padding: 0; 
     @include text-h2; 
     } 
@@ -158,46 +176,47 @@
     .room-detail__cancel-text { 
     width: 100%; 
     @include text-body; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    margin-left: 20px; 
     } 
     
     .room-detail__impressions { 
     display: flex; 
     flex-direction: column; 
-    margin-left: 7.689%; 
+    margin-left: 11.5%; 
     @media screen and(max-width: 1020px) { 
     margin-left: 0; 
     } 
     } 
     
-    .room-detail__impressions__title { 
+.room-detail__impressions__title { 
     margin: 0; 
     padding: 0; 
     @include text-h2; 
-    } 
+}
     
-    
-    .room-detail__pie-chart { 
+.room-detail__pie-chart { 
     display: flex; 
-    margin-top: 21px; 
-    } 
-    .room-detail__pie-chart-list { 
+    margin-top: 21px;
+    align-items: flex-end; 
+} 
+.room-detail__pie-chart-list { 
     list-style: none; 
     margin: 0; 
     padding: 0; 
     margin-left: 30px; 
-    } 
-    .room-detail__pie-chart-list-item { 
+} 
+.room-detail__pie-chart-list-item { 
     display: flex; 
     align-items: center; 
     } 
-    .room-detail__pie-chart-list-text { 
+.room-detail__pie-chart-list-text { 
     @include text-body; 
-    margin-left: 5px; 
-    } 
+} 
     
     .pie_chart { 
-    @include text-h3; 
+    @include text-h3;
+    text-transform: uppercase;
     fill: $purple; 
     } 
     .pie_chart__count { 
@@ -205,40 +224,36 @@
     font-style: normal; 
     font-weight: bold; 
     font-size: 24px; 
-    line-height: 30px; 
+    line-height: 30px;
+    margin-bottom: 10px;
     } 
     
-    .room-detail__pie-chart-list-dot1 { 
+.room-detail__pie-chart-list-dot1 { 
     width: 10px; 
     height: 10px; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    margin-right: 5px; 
     background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); 
-    } 
-    .room-detail__pie-chart-list-dot2 { 
+} 
+.room-detail__pie-chart-list-dot2 { 
     @extend .room-detail__pie-chart-list-dot1; 
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); 
-    } 
-    .room-detail__pie-chart-list-dot3 { 
+} 
+.room-detail__pie-chart-list-dot3 { 
     @extend .room-detail__pie-chart-list-dot1; 
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
-    } 
-    .room-detail__pie-chart-list-dot4 { 
-    @extend
-    .room-detail__pie-chart-list-dot1; 
+} 
+.room-detail__pie-chart-list-dot4 { 
+    @extend .room-detail__pie-chart-list-dot1; 
     background: linear-gradient(180deg, #919191 0%, #3D4975 100%); 
-    } 
+} 
     
-    .room-info__item:nth-child(3) { 
+.room-info__item:nth-child(3) { 
     border: none; 
     margin-bottom: 0; 
     padding-bottom: 0; 
-    } 
-    
-    .test { 
-    width: 100%; 
-    background: red; 
-    } 
-    .test-img { 
-    width: 100%; 
-    object-fit: cover; 
-    }
+}
+
+.room-detail__footer {
+
+}
