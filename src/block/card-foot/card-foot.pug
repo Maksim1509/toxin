@@ -1,4 +1,5 @@
 mixin card-foot(text, text_btn, href)
     .card-foot
             span.card-foot__text= text
-            +button(`${text_btn}`, 0, href)(class="button  button--empty")
+            .card-foot__btn
+                +button(`${text_btn}`, 0, href)(class="button  button--empty")

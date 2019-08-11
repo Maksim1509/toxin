@@ -1,0 +1,1 @@
+{"version":3,"sources":["../block/headers-footers/headers-footers.js"],"names":[],"mappings":";;;;;;;AAAA,aAAA,QAAA","file":"headers-footers.22533dbb.js","sourceRoot":"..\\src\\pug","sourcesContent":["import '../../scss/main.scss';\n"]}
